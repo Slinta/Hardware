@@ -1805,8 +1805,4 @@ Text GLabel 7400 2600 2    50   Input ~ 0
 PB8
 Text GLabel 7400 3400 2    50   Input ~ 0
 PA15
-NoConn ~ 3100 1200
-NoConn ~ 4100 1200
-NoConn ~ 5100 1200
-NoConn ~ 6100 1200
 $EndSCHEMATC
