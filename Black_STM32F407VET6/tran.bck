@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BC140
+D 1A Ic, 40V Vce, NPN Transistor, TO-39
+K NPN Transistor
+F http://www.farnell.com/datasheets/296634.pdf
+$ENDCMP
+#
+$CMP BC141
+D 1A Ic, 60V Vce, NPN Transistor, TO-39
+K NPN Transistor
+F http://www.farnell.com/datasheets/296634.pdf
+$ENDCMP
+#
+$CMP BCX70
+D 800mA Ic, 50V Vce, NPN Transistor, TO-39
+K NPN Transistor
+F https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwig1MnVtKbjAhUCKVAKHT2oDBAQFjAAegQIAhAC&url=https%3A%2F%2Fassets.nexperia.com%2Fdocuments%2Fdata-sheet%2FBCX70.pdf&usg=AOvVaw2LoUAJLh4gJRAJgwgFtEYT
+$ENDCMP
+#
+#End Doc Library
