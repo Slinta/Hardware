@@ -1575,17 +1575,6 @@ F 3 "~" H 4850 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L STM32F407VET6:Right J26
-U 1 1 5D30CC8F
-P 10900 2750
-F 0 "J26" H 10900 4165 50  0000 C CNN
-F 1 "Right" H 10900 4074 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x24_P2.54mm_Vertical" H 10900 2400 50  0001 C CNN
-F 3 "" H 10900 2400 50  0001 C CNN
-	1    10900 2750
-	1    0    0    -1  
-$EndComp
-$Comp
 L STM32F407VET6:Bottom J25
 U 1 1 5D30CC95
 P 9650 5500
@@ -1672,8 +1661,6 @@ Text GLabel 8850 2550 2    50   Input ~ 0
 3V3
 Text GLabel 10550 1600 0    50   Input ~ 0
 3V3
-Text GLabel 10550 1700 0    50   Input ~ 0
-3V3
 Text GLabel 8850 1750 2    50   Input ~ 0
 3V3
 Text GLabel 8850 1850 2    50   Input ~ 0
@@ -1683,8 +1670,6 @@ Text GLabel 11250 1600 2    50   Input ~ 0
 Text GLabel 11250 1700 2    50   Input ~ 0
 3V3
 Text GLabel 8150 1950 0    50   Input ~ 0
-GND
-Text GLabel 10550 1900 0    50   Input ~ 0
 GND
 Text GLabel 10550 2000 0    50   Input ~ 0
 GND
@@ -1704,8 +1689,6 @@ Text GLabel 8850 1550 2    50   Input ~ 0
 5V
 Text GLabel 8150 1650 0    50   Input ~ 0
 5V
-Wire Wire Line
-	10550 1900 10550 1800
 Text GLabel 9500 8500 3    50   Input ~ 0
 5V
 Text GLabel 9300 7700 1    50   Input ~ 0
@@ -1754,17 +1737,17 @@ Text GLabel 10300 5150 1    50   Input ~ 0
 Beeper
 Text GLabel 10300 5850 3    50   Input ~ 0
 ENC
-Text GLabel 10100 5150 1    50   Input ~ 0
-LCDRS
-Text GLabel 9900 5150 1    50   Input ~ 0
-LCDE
-Text GLabel 10200 5150 1    50   Input ~ 0
-LCD4
-Text GLabel 10000 5150 1    50   Input ~ 0
-LCD5
 Text GLabel 9800 5150 1    50   Input ~ 0
-LCD6
+LCDRS
+Text GLabel 10000 5150 1    50   Input ~ 0
+LCDE
 Text GLabel 9700 5150 1    50   Input ~ 0
+LCD4
+Text GLabel 9900 5150 1    50   Input ~ 0
+LCD5
+Text GLabel 10100 5150 1    50   Input ~ 0
+LCD6
+Text GLabel 10200 5150 1    50   Input ~ 0
 LCD7
 Text GLabel 4400 9450 3    50   Input ~ 0
 5V
@@ -1877,29 +1860,29 @@ NoConn ~ 8850 3550
 NoConn ~ 8850 3450
 NoConn ~ 8850 3350
 NoConn ~ 8850 3250
-Text GLabel 8150 2050 0    50   Input ~ 0
+Text GLabel 8850 2250 2    50   Input ~ 0
 Y_Dir
-Text GLabel 8150 2250 0    50   Input ~ 0
+Text GLabel 11250 2500 2    50   Input ~ 0
 Y_En
 Text GLabel 8850 2150 2    50   Input ~ 0
 Y_Step
-Text GLabel 8850 2250 2    50   Input ~ 0
+Text GLabel 9800 5850 3    50   Input ~ 0
 X-
 Text GLabel 8850 2650 2    50   Input ~ 0
 HotBed
 Text GLabel 8150 2750 0    50   Input ~ 0
 Heater0
-Text GLabel 11250 2500 2    50   Input ~ 0
+Text GLabel 8150 3050 0    50   Input ~ 0
 X_Dir
 Text GLabel 8850 2750 2    50   Input ~ 0
 Heater1
 Text GLabel 10550 3700 0    50   Input ~ 0
 Y-
 NoConn ~ 8850 3050
-Text GLabel 8150 3050 0    50   Input ~ 0
+Text GLabel 8150 2050 0    50   Input ~ 0
 X_Step
 NoConn ~ 8850 3150
-Text GLabel 8150 3250 0    50   Input ~ 0
+Text GLabel 8150 2250 0    50   Input ~ 0
 X_En
 Text GLabel 8150 3750 0    50   Input ~ 0
 SS2
@@ -1925,7 +1908,6 @@ NoConn ~ 9400 5850
 NoConn ~ 9500 5850
 NoConn ~ 9600 5850
 NoConn ~ 9700 5850
-NoConn ~ 9800 5850
 NoConn ~ 9600 5150
 NoConn ~ 10550 2800
 NoConn ~ 11250 2400
@@ -2310,4 +2292,51 @@ F 3 "~" H 15050 4100 50  0001 C CNN
 	1    15050 4100
 	1    0    0    -1  
 $EndComp
+NoConn ~ 8150 3250
+$Comp
+L STM32F407VET6:Right J26
+U 1 1 5D30CC8F
+P 10900 2750
+F 0 "J26" H 10900 4165 50  0000 C CNN
+F 1 "Right" H 10900 4074 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x24_P2.54mm_Vertical" H 10900 2400 50  0001 C CNN
+F 3 "" H 10900 2400 50  0001 C CNN
+	1    10900 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 10550 1900 0    50   Input ~ 0
+GND
+Text GLabel 10550 1700 0    50   Input ~ 0
+3V3
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5D48E2E2
+P 10050 1950
+F 0 "SW1" V 10096 1902 50  0000 R CNN
+F 1 "Boot0" V 10005 1902 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 10050 2150 50  0001 C CNN
+F 3 "~" H 10050 2150 50  0001 C CNN
+	1    10050 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5D4F03A2
+P 10050 1600
+F 0 "R6" H 10120 1646 50  0000 L CNN
+F 1 "R4.7K" H 10120 1555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9980 1600 50  0001 C CNN
+F 3 "~" H 10050 1600 50  0001 C CNN
+	1    10050 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 10050 1450 1    50   Input ~ 0
+GND
+Text GLabel 10050 2150 3    50   Input ~ 0
+3V3
+Wire Wire Line
+	10050 1800 10550 1800
+Wire Wire Line
+	10050 1750 10050 1800
+Connection ~ 10050 1750
 $EndSCHEMATC
