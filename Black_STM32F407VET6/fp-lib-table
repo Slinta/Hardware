@@ -1,3 +1,5 @@
 (fp_lib_table
   (lib (name Custom)(type KiCad)(uri C:/Users/Slinta/Documents/GitHub/BlackVet6Shield/Hardware/Black_STM32F407VET6)(options "")(descr ""))
+  (lib (name Step_stick)(type KiCad)(uri ${KIPRJMOD}/Step_stick.pretty)(options "")(descr ""))
+  (lib (name Motor_driver)(type KiCad)(uri ${KIPRJMOD}/Motor_driver.pretty)(options "")(descr ""))
 )

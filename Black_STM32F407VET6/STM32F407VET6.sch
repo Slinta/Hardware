@@ -333,114 +333,64 @@ Wire Wire Line
 Wire Wire Line
 	1800 4950 1800 4900
 Connection ~ 1800 4950
-Text GLabel 12800 1950 2    50   Input ~ 0
+Text GLabel 8500 2800 2    50   Input ~ 0
 12V
-Text GLabel 12800 1000 2    50   Input ~ 0
+Text GLabel 8500 1150 2    50   Input ~ 0
 12V
-Text GLabel 12650 2750 2    50   Input ~ 0
+Text GLabel 8000 4000 2    50   Input ~ 0
 GND
-Text GLabel 12800 2150 2    50   Input ~ 0
+Text GLabel 8500 3100 2    50   Input ~ 0
 GND
-Text GLabel 12650 1800 2    50   Input ~ 0
+Text GLabel 8500 2350 2    50   Input ~ 0
 GND
-Text GLabel 12800 1200 2    50   Input ~ 0
+Text GLabel 8500 1450 2    50   Input ~ 0
 GND
-Text GLabel 12650 2650 2    50   Input ~ 0
+Text GLabel 8000 3850 2    50   Input ~ 0
 3V3
-Text GLabel 12650 1700 2    50   Input ~ 0
+Text GLabel 8500 2200 2    50   Input ~ 0
 3V3
-Wire Wire Line
-	12800 2150 12650 2150
-Wire Wire Line
-	12650 1950 12650 2050
-Wire Wire Line
-	12800 1950 12650 1950
-Wire Wire Line
-	12650 1000 12650 1100
-Wire Wire Line
-	12800 1000 12650 1000
-Wire Wire Line
-	12650 1200 12800 1200
 $Comp
 L Device:CP_Small C8
 U 1 1 5C4B7C75
-P 12800 2050
-F 0 "C8" H 12888 2096 50  0000 L CNN
-F 1 "100uF 35V" H 12888 2005 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x6.9" H 12800 2050 50  0001 C CNN
-F 3 "~" H 12800 2050 50  0001 C CNN
-	1    12800 2050
+P 8300 3000
+F 0 "C8" H 8100 2950 50  0000 L CNN
+F 1 "100uF" H 8400 3050 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x6.9" H 8300 3000 50  0001 C CNN
+F 3 "~" H 8300 3000 50  0001 C CNN
+	1    8300 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:CP_Small C7
 U 1 1 5C4B6EC9
-P 12800 1100
-F 0 "C7" H 12888 1146 50  0000 L CNN
-F 1 "100uF 35V" H 12888 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x6.9" H 12800 1100 50  0001 C CNN
-F 3 "~" H 12800 1100 50  0001 C CNN
-	1    12800 1100
+P 8300 1350
+F 0 "C7" H 8100 1300 50  0000 L CNN
+F 1 "100uF" H 8400 1400 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x6.9" H 8300 1350 50  0001 C CNN
+F 3 "~" H 8300 1350 50  0001 C CNN
+	1    8300 1350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12650 2550 12700 2550
-Wire Wire Line
-	12650 2450 12700 2450
-Wire Wire Line
-	12650 2350 12700 2350
-Wire Wire Line
-	12650 2250 12700 2250
-Wire Wire Line
-	12650 1600 12700 1600
-Wire Wire Line
-	12650 1500 12700 1500
-Wire Wire Line
-	12700 1400 12650 1400
-Wire Wire Line
-	12650 1300 12700 1300
 $Comp
 L Connector_Generic:Conn_01x04 J39
 U 1 1 5C4AD1D5
-P 12900 2350
-F 0 "J39" H 12980 2342 50  0000 L CNN
-F 1 "Y" H 12980 2251 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 12900 2350 50  0001 C CNN
-F 3 "~" H 12900 2350 50  0001 C CNN
-	1    12900 2350
+P 8550 3350
+F 0 "J39" H 8630 3342 50  0000 L CNN
+F 1 "Y" H 8630 3251 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 8550 3350 50  0001 C CNN
+F 3 "~" H 8550 3350 50  0001 C CNN
+	1    8550 3350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J38
 U 1 1 5C4AD14A
-P 12900 1400
-F 0 "J38" H 12980 1392 50  0000 L CNN
-F 1 "X" H 12980 1301 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 12900 1400 50  0001 C CNN
-F 3 "~" H 12900 1400 50  0001 C CNN
-	1    12900 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L STM32F407VET6:DRV_motor J34
-U 1 1 5C4B04F4
-P 12400 2400
-F 0 "J34" H 12400 2900 50  0000 C CNN
-F 1 "Y_motor" V 12300 2500 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 12550 1950 50  0001 C CNN
-F 3 "" H 12550 1950 50  0001 C CNN
-	1    12400 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L STM32F407VET6:DRV_motor J33
-U 1 1 5C4AFE22
-P 12400 1450
-F 0 "J33" H 12400 1950 50  0000 C CNN
-F 1 "X_motor" V 12300 1550 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 12550 1000 50  0001 C CNN
-F 3 "" H 12550 1000 50  0001 C CNN
-	1    12400 1450
+P 8550 1700
+F 0 "J38" H 8630 1692 50  0000 L CNN
+F 1 "X" H 8630 1601 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 8550 1700 50  0001 C CNN
+F 3 "~" H 8550 1700 50  0001 C CNN
+	1    8550 1700
 	1    0    0    -1  
 $EndComp
 Text GLabel 14700 1950 0    50   Input ~ 0
@@ -1577,24 +1527,13 @@ $EndComp
 $Comp
 L STM32F407VET6:Bottom J25
 U 1 1 5D30CC95
-P 9650 5500
-F 0 "J25" H 10528 5546 50  0000 L CNN
-F 1 "Bottom" H 10528 5455 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Vertical" H 9350 5500 50  0001 C CNN
-F 3 "" H 9350 5500 50  0001 C CNN
-	1    9650 5500
+P 11450 5250
+F 0 "J25" H 12328 5296 50  0000 L CNN
+F 1 "Bottom" H 12328 5205 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Vertical" H 11150 5250 50  0001 C CNN
+F 3 "" H 11150 5250 50  0001 C CNN
+	1    11450 5250
 	1    0    0    -1  
-$EndComp
-$Comp
-L STM32F407VET6-rescue:DRV_logic-STM32F407VET6 J20
-U 1 1 5D30CCA7
-P 6600 4900
-F 0 "J20" H 6550 5400 50  0001 L CNN
-F 1 "E0_logic" V 6700 4800 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 6200 4500 50  0001 C CNN
-F 3 "" H 6200 4500 50  0001 C CNN
-	1    6600 4900
-	0    1    -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J12
@@ -1640,114 +1579,114 @@ F 3 "~" H 4750 9350 50  0001 C CNN
 	1    4750 9350
 	1    0    0    -1  
 $EndComp
-Text GLabel 9500 7700 1    50   Input ~ 0
+Text GLabel 10550 8550 1    50   Input ~ 0
 GND
-Text GLabel 10400 5150 1    50   Input ~ 0
+Text GLabel 12200 4900 1    50   Input ~ 0
 GND
-Text GLabel 8900 5850 3    50   Input ~ 0
+Text GLabel 10700 5600 3    50   Input ~ 0
 GND
-Text GLabel 9000 5850 3    50   Input ~ 0
+Text GLabel 10800 5600 3    50   Input ~ 0
 GND
-NoConn ~ 9000 5150
-Text GLabel 10400 5850 3    50   Input ~ 0
+NoConn ~ 10800 4900
+Text GLabel 12200 5600 3    50   Input ~ 0
 Reset
 Text GLabel 4400 8250 1    50   Input ~ 0
 GND
-Text GLabel 8150 1750 0    50   Input ~ 0
+Text GLabel 9900 2200 0    50   Input ~ 0
 3V3
-Text GLabel 8150 1850 0    50   Input ~ 0
+Text GLabel 9900 2300 0    50   Input ~ 0
 3V3
-Text GLabel 8850 2550 2    50   Input ~ 0
+Text GLabel 10600 3000 2    50   Input ~ 0
 3V3
-Text GLabel 10550 1600 0    50   Input ~ 0
+Text GLabel 12300 2050 0    50   Input ~ 0
 3V3
-Text GLabel 8850 1750 2    50   Input ~ 0
+Text GLabel 10600 2200 2    50   Input ~ 0
 3V3
-Text GLabel 8850 1850 2    50   Input ~ 0
+Text GLabel 10600 2300 2    50   Input ~ 0
 3V3
-Text GLabel 11250 1600 2    50   Input ~ 0
+Text GLabel 13000 2050 2    50   Input ~ 0
 3V3
-Text GLabel 11250 1700 2    50   Input ~ 0
+Text GLabel 13000 2150 2    50   Input ~ 0
 3V3
-Text GLabel 8150 1950 0    50   Input ~ 0
+Text GLabel 9900 2400 0    50   Input ~ 0
 GND
-Text GLabel 10550 2000 0    50   Input ~ 0
+Text GLabel 12300 2450 0    50   Input ~ 0
 GND
-Text GLabel 8150 2550 0    50   Input ~ 0
+Text GLabel 9900 3000 0    50   Input ~ 0
 GND
-Text GLabel 8850 1950 2    50   Input ~ 0
+Text GLabel 10600 2400 2    50   Input ~ 0
 GND
-Text GLabel 11250 1900 2    50   Input ~ 0
+Text GLabel 13000 2350 2    50   Input ~ 0
 GND
-Text GLabel 11250 2000 2    50   Input ~ 0
+Text GLabel 13000 2450 2    50   Input ~ 0
 GND
-Text GLabel 8150 1550 0    50   Input ~ 0
+Text GLabel 9900 2000 0    50   Input ~ 0
 5V
-Text GLabel 8850 1650 2    50   Input ~ 0
+Text GLabel 10600 2100 2    50   Input ~ 0
 5V
-Text GLabel 8850 1550 2    50   Input ~ 0
+Text GLabel 10600 2000 2    50   Input ~ 0
 5V
-Text GLabel 8150 1650 0    50   Input ~ 0
+Text GLabel 9900 2100 0    50   Input ~ 0
 5V
-Text GLabel 9500 8500 3    50   Input ~ 0
+Text GLabel 10550 9350 3    50   Input ~ 0
 5V
-Text GLabel 9300 7700 1    50   Input ~ 0
+Text GLabel 10350 8550 1    50   Input ~ 0
 LCDRS
-Text GLabel 9300 8500 3    50   Input ~ 0
+Text GLabel 10350 9350 3    50   Input ~ 0
 LCD5
-Text GLabel 9100 8500 3    50   Input ~ 0
+Text GLabel 10150 9350 3    50   Input ~ 0
 LCD7
-Text GLabel 9200 8500 3    50   Input ~ 0
+Text GLabel 10250 9350 3    50   Input ~ 0
 LCD6
-Text GLabel 9400 8500 3    50   Input ~ 0
+Text GLabel 10450 9350 3    50   Input ~ 0
 LCD4
-Text GLabel 9200 7700 1    50   Input ~ 0
+Text GLabel 10250 8550 1    50   Input ~ 0
 LCDE
-Text GLabel 8900 5150 1    50   Input ~ 0
+Text GLabel 10700 4900 1    50   Input ~ 0
 3V3
-Text GLabel 8150 2350 0    50   Input ~ 0
+Text GLabel 9900 2800 0    50   Input ~ 0
 T0
-Text GLabel 8150 2450 0    50   Input ~ 0
+Text GLabel 9900 2900 0    50   Input ~ 0
 TB
-Text GLabel 8850 2350 2    50   Input ~ 0
+Text GLabel 10600 2800 2    50   Input ~ 0
 T1
-Text GLabel 8850 2450 2    50   Input ~ 0
+Text GLabel 10600 2900 2    50   Input ~ 0
 TC
-Text GLabel 9900 5850 3    50   Input ~ 0
+Text GLabel 11700 5600 3    50   Input ~ 0
 Fan0
-Text GLabel 10000 5850 3    50   Input ~ 0
+Text GLabel 11800 5600 3    50   Input ~ 0
 Fan1
-Text GLabel 10100 5850 3    50   Input ~ 0
+Text GLabel 11900 5600 3    50   Input ~ 0
 Fan2
-Text GLabel 10200 5850 3    50   Input ~ 0
+Text GLabel 12000 5600 3    50   Input ~ 0
 Fan3
-Text GLabel 9200 5850 3    50   Input ~ 0
+Text GLabel 11000 5600 3    50   Input ~ 0
 MISO
-Text GLabel 9300 5850 3    50   Input ~ 0
+Text GLabel 11100 5600 3    50   Input ~ 0
 SDSS
-Text GLabel 9300 5150 1    50   Input ~ 0
+Text GLabel 11100 4900 1    50   Input ~ 0
 CLK
-Text GLabel 9100 5150 1    50   Input ~ 0
+Text GLabel 10900 4900 1    50   Input ~ 0
 SDDET
-Text GLabel 9400 5150 1    50   Input ~ 0
+Text GLabel 11200 4900 1    50   Input ~ 0
 EN2
-Text GLabel 9500 5150 1    50   Input ~ 0
+Text GLabel 11300 4900 1    50   Input ~ 0
 EN1
-Text GLabel 10300 5150 1    50   Input ~ 0
+Text GLabel 12100 4900 1    50   Input ~ 0
 Beeper
-Text GLabel 10300 5850 3    50   Input ~ 0
+Text GLabel 12100 5600 3    50   Input ~ 0
 ENC
-Text GLabel 9800 5150 1    50   Input ~ 0
+Text GLabel 11600 4900 1    50   Input ~ 0
 LCDRS
-Text GLabel 10000 5150 1    50   Input ~ 0
+Text GLabel 11800 4900 1    50   Input ~ 0
 LCDE
-Text GLabel 9700 5150 1    50   Input ~ 0
+Text GLabel 11500 4900 1    50   Input ~ 0
 LCD4
-Text GLabel 9900 5150 1    50   Input ~ 0
+Text GLabel 11700 4900 1    50   Input ~ 0
 LCD5
-Text GLabel 10100 5150 1    50   Input ~ 0
+Text GLabel 11900 4900 1    50   Input ~ 0
 LCD6
-Text GLabel 10200 5150 1    50   Input ~ 0
+Text GLabel 12000 4900 1    50   Input ~ 0
 LCD7
 Text GLabel 4400 9450 3    50   Input ~ 0
 5V
@@ -1784,324 +1723,242 @@ Text GLabel 4250 9250 1    50   Input ~ 0
 Z-
 Text GLabel 4550 9250 1    50   Input ~ 0
 Z+
-Text GLabel 6950 2150 3    50   Input ~ 0
+Text GLabel 6900 2350 0    50   Input ~ 0
 X_En
-Text GLabel 6350 2150 3    50   Input ~ 0
-X_Step
-Text GLabel 6250 2150 3    50   Input ~ 0
-X_Dir
-NoConn ~ 11250 3800
-NoConn ~ 11250 3900
-NoConn ~ 10550 3900
-NoConn ~ 10550 3800
-NoConn ~ 11250 3600
-Text GLabel 11250 3700 2    50   Input ~ 0
+NoConn ~ 13000 4250
+NoConn ~ 13000 4350
+NoConn ~ 12300 4350
+NoConn ~ 12300 4250
+NoConn ~ 13000 4050
+Text GLabel 13000 4150 2    50   Input ~ 0
 PD11
-Text GLabel 11250 3500 2    50   Input ~ 0
+Text GLabel 13000 3950 2    50   Input ~ 0
 Z+
-Text GLabel 10550 3600 0    50   Input ~ 0
+Text GLabel 12300 4050 0    50   Input ~ 0
 Z-
-Text GLabel 10550 3500 0    50   Input ~ 0
+Text GLabel 12300 3950 0    50   Input ~ 0
 PWM1
-Text GLabel 11250 3400 2    50   Input ~ 0
+Text GLabel 13000 3850 2    50   Input ~ 0
 PWM2
-Text GLabel 10550 3300 0    50   Input ~ 0
+Text GLabel 12300 3750 0    50   Input ~ 0
 SDIO_DET
-Text GLabel 10550 2500 0    50   Input ~ 0
+Text GLabel 12300 2950 0    50   Input ~ 0
 E0_Step
-Text GLabel 10550 2700 0    50   Input ~ 0
+Text GLabel 12300 3150 0    50   Input ~ 0
 E0_Dir
-Text GLabel 11250 2800 2    50   Input ~ 0
+Text GLabel 13000 3250 2    50   Input ~ 0
 Z_Dir
-Text GLabel 10550 2600 0    50   Input ~ 0
+Text GLabel 12300 3050 0    50   Input ~ 0
 Z_Step
-Text GLabel 11250 2100 2    50   Input ~ 0
+Text GLabel 13000 2550 2    50   Input ~ 0
 E0_En
-Text GLabel 10550 2100 0    50   Input ~ 0
+Text GLabel 12300 2550 0    50   Input ~ 0
 Z_En
-NoConn ~ 11250 2600
+NoConn ~ 13000 3050
 Connection ~ 4300 9450
-Text GLabel 9100 5850 3    50   Input ~ 0
+Text GLabel 10900 5600 3    50   Input ~ 0
 Abort
-Text GLabel 10550 3200 0    50   Input ~ 0
+Text GLabel 12300 3650 0    50   Input ~ 0
 RX
-Text GLabel 11250 3200 2    50   Input ~ 0
+Text GLabel 13000 3650 2    50   Input ~ 0
 TX
-Text GLabel 11250 2300 2    50   Input ~ 0
+Text GLabel 13000 2750 2    50   Input ~ 0
 SCL
-Text GLabel 10550 2300 0    50   Input ~ 0
+Text GLabel 12300 2750 0    50   Input ~ 0
 SDA
-Text GLabel 10550 3100 0    50   Input ~ 0
+Text GLabel 12300 3550 0    50   Input ~ 0
 USB_DM
-Text GLabel 11250 3100 2    50   Input ~ 0
+Text GLabel 13000 3550 2    50   Input ~ 0
 USB_DP
-Text GLabel 8850 3850 2    50   Input ~ 0
+Text GLabel 10600 4300 2    50   Input ~ 0
 MISO
-Text GLabel 8150 3850 0    50   Input ~ 0
+Text GLabel 9900 4300 0    50   Input ~ 0
 CLK
-NoConn ~ 8850 3750
-Text GLabel 10550 3400 0    50   Input ~ 0
+NoConn ~ 10600 4200
+Text GLabel 12300 3850 0    50   Input ~ 0
 SDIO_D0
-Text GLabel 11250 3300 2    50   Input ~ 0
+Text GLabel 13000 3750 2    50   Input ~ 0
 SDIO_D1
-Text GLabel 10550 3000 0    50   Input ~ 0
+Text GLabel 12300 3450 0    50   Input ~ 0
 SDIO_D2
-Text GLabel 11250 2900 2    50   Input ~ 0
+Text GLabel 13000 3350 2    50   Input ~ 0
 SDIO_D3
-Text GLabel 10550 2900 0    50   Input ~ 0
+Text GLabel 12300 3350 0    50   Input ~ 0
 SDIO_SCK
-Text GLabel 11250 2700 2    50   Input ~ 0
+Text GLabel 13000 3150 2    50   Input ~ 0
 SDIO_CMD
-NoConn ~ 8150 3650
-NoConn ~ 8150 3550
-NoConn ~ 8150 3450
-NoConn ~ 8150 3350
-NoConn ~ 8850 3550
-NoConn ~ 8850 3450
-NoConn ~ 8850 3350
-NoConn ~ 8850 3250
-Text GLabel 8850 2250 2    50   Input ~ 0
+NoConn ~ 9900 4100
+NoConn ~ 9900 4000
+NoConn ~ 9900 3900
+NoConn ~ 9900 3800
+NoConn ~ 10600 4000
+NoConn ~ 10600 3900
+NoConn ~ 10600 3800
+NoConn ~ 10600 3700
+Text GLabel 10600 2700 2    50   Input ~ 0
 Y_Dir
-Text GLabel 11250 2500 2    50   Input ~ 0
+Text GLabel 13000 2950 2    50   Input ~ 0
 Y_En
-Text GLabel 8850 2150 2    50   Input ~ 0
+Text GLabel 10600 2600 2    50   Input ~ 0
 Y_Step
-Text GLabel 9800 5850 3    50   Input ~ 0
+Text GLabel 11600 5600 3    50   Input ~ 0
 X-
-Text GLabel 8850 2650 2    50   Input ~ 0
+Text GLabel 10600 3100 2    50   Input ~ 0
 HotBed
-Text GLabel 8150 2750 0    50   Input ~ 0
+Text GLabel 9900 3200 0    50   Input ~ 0
 Heater0
-Text GLabel 8150 3050 0    50   Input ~ 0
+Text GLabel 9900 3500 0    50   Input ~ 0
 X_Dir
-Text GLabel 8850 2750 2    50   Input ~ 0
+Text GLabel 10600 3200 2    50   Input ~ 0
 Heater1
-Text GLabel 10550 3700 0    50   Input ~ 0
+Text GLabel 12300 4150 0    50   Input ~ 0
 Y-
-NoConn ~ 8850 3050
-Text GLabel 8150 2050 0    50   Input ~ 0
+NoConn ~ 10600 3500
+Text GLabel 9900 2500 0    50   Input ~ 0
 X_Step
-NoConn ~ 8850 3150
-Text GLabel 8150 2250 0    50   Input ~ 0
+NoConn ~ 10600 3600
+Text GLabel 9900 2700 0    50   Input ~ 0
 X_En
-Text GLabel 8150 3750 0    50   Input ~ 0
+Text GLabel 9900 4200 0    50   Input ~ 0
 SS2
-Text GLabel 8850 3650 2    50   Input ~ 0
+Text GLabel 10600 4100 2    50   Input ~ 0
 SS1
-Text GLabel 6950 3150 3    50   Input ~ 0
+Text GLabel 6900 4000 0    50   Input ~ 0
 Y_En
-Text GLabel 6650 3150 3    50   Input ~ 0
+Text GLabel 6900 3550 0    50   Input ~ 0
 Y_Step
-Text GLabel 6250 3150 3    50   Input ~ 0
+Text GLabel 6900 2950 0    50   Input ~ 0
 Y_Dir
-Text GLabel 6350 4150 3    50   Input ~ 0
+Text GLabel 6900 4800 0    50   Input ~ 0
 Z_Step
-Text GLabel 6250 4150 3    50   Input ~ 0
+Text GLabel 6900 4650 0    50   Input ~ 0
 Z_Dir
-Text GLabel 6350 5150 3    50   Input ~ 0
+Text GLabel 6900 6500 0    50   Input ~ 0
 E0_Step
-Text GLabel 6250 5150 3    50   Input ~ 0
+Text GLabel 6900 6350 0    50   Input ~ 0
 E0_Dir
-Text GLabel 9200 5150 1    50   Input ~ 0
+Text GLabel 11000 4900 1    50   Input ~ 0
 MOSI
-NoConn ~ 9400 5850
-NoConn ~ 9500 5850
-NoConn ~ 9600 5850
-NoConn ~ 9700 5850
-NoConn ~ 9600 5150
-NoConn ~ 10550 2800
-NoConn ~ 11250 2400
-NoConn ~ 10550 2400
-$Comp
-L STM32F407VET6-rescue:DRV_logic-STM32F407VET6 J17
-U 1 1 5D30CFA5
-P 6600 1900
-F 0 "J17" H 6600 2400 50  0001 C CNN
-F 1 "X_logic" V 6700 2000 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 6200 1500 50  0001 C CNN
-F 3 "" H 6200 1500 50  0001 C CNN
-	1    6600 1900
-	0    1    -1   0   
-$EndComp
-$Comp
-L STM32F407VET6-rescue:DRV_logic-STM32F407VET6 J18
-U 1 1 5D30CFAB
-P 6600 2900
-F 0 "J18" H 6550 3400 50  0001 L CNN
-F 1 "Y_logic" V 6700 2800 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 6200 2500 50  0001 C CNN
-F 3 "" H 6200 2500 50  0001 C CNN
-	1    6600 2900
-	0    1    -1   0   
-$EndComp
-Text GLabel 6950 4150 3    50   Input ~ 0
+NoConn ~ 11200 5600
+NoConn ~ 11300 5600
+NoConn ~ 11400 5600
+NoConn ~ 11500 5600
+NoConn ~ 11400 4900
+NoConn ~ 12300 3250
+NoConn ~ 13000 2850
+NoConn ~ 12300 2850
+Text GLabel 6900 5700 0    50   Input ~ 0
 Z_En
-$Comp
-L STM32F407VET6-rescue:DRV_logic-STM32F407VET6 J19
-U 1 1 5D30CFB2
-P 6600 3900
-F 0 "J19" H 6550 4400 50  0001 L CNN
-F 1 "Z_logic" V 6700 3800 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 6200 3500 50  0001 C CNN
-F 3 "" H 6200 3500 50  0001 C CNN
-	1    6600 3900
-	0    1    -1   0   
-$EndComp
-Text GLabel 6950 5150 3    50   Input ~ 0
+Text GLabel 6900 7400 0    50   Input ~ 0
 E0_En
 Wire Wire Line
 	4300 9450 4550 9450
 $Comp
-L STM32F407VET6:DRV_motor J27
-U 1 1 5D30CFBA
-P 12350 3950
-F 0 "J27" H 12350 4450 50  0000 C CNN
-F 1 "Z_motor" V 12250 4050 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 12500 3500 50  0001 C CNN
-F 3 "" H 12500 3500 50  0001 C CNN
-	1    12350 3950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP_Small C9
 U 1 1 5D30CFC0
-P 12750 3600
-F 0 "C9" H 12838 3646 50  0000 L CNN
-F 1 "100uF 35V" H 12838 3555 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x6.9" H 12750 3600 50  0001 C CNN
-F 3 "~" H 12750 3600 50  0001 C CNN
-	1    12750 3600
+P 8350 4700
+F 0 "C9" H 8150 4700 50  0000 L CNN
+F 1 "100uF" H 8450 4750 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x6.9" H 8350 4700 50  0001 C CNN
+F 3 "~" H 8350 4700 50  0001 C CNN
+	1    8350 4700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12750 3500 12600 3500
-Wire Wire Line
-	12600 3500 12600 3600
-Wire Wire Line
-	12750 3700 12600 3700
-Text GLabel 12600 4200 2    50   Input ~ 0
+Text GLabel 8000 5550 2    50   Input ~ 0
 3V3
-Text GLabel 12600 4300 2    50   Input ~ 0
+Text GLabel 8000 5700 2    50   Input ~ 0
 GND
-Text GLabel 12750 3700 2    50   Input ~ 0
+Text GLabel 8500 4800 2    50   Input ~ 0
 GND
-Text GLabel 12750 3500 2    50   Input ~ 0
+Text GLabel 8500 4500 2    50   Input ~ 0
 12V
 $Comp
 L STM32F407VET6:Left J22
 U 1 1 5D30CFEA
-P 8500 2700
-F 0 "J22" H 8500 4115 50  0000 C CNN
-F 1 "Left" H 8500 4024 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x24_P2.54mm_Vertical" H 8350 3000 50  0001 C CNN
-F 3 "" H 8350 3000 50  0001 C CNN
-	1    8500 2700
+P 10250 3150
+F 0 "J22" H 10250 4565 50  0000 C CNN
+F 1 "Left" H 10250 4474 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x24_P2.54mm_Vertical" H 10100 3450 50  0001 C CNN
+F 3 "" H 10100 3450 50  0001 C CNN
+	1    10250 3150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J30
 U 1 1 5D30CFF0
-P 13550 3900
-F 0 "J30" H 13630 3892 50  0000 L CNN
-F 1 "Z" H 13630 3801 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 13550 3900 50  0001 C CNN
-F 3 "~" H 13550 3900 50  0001 C CNN
-	1    13550 3900
+P 9200 5050
+F 0 "J30" H 9280 5042 50  0000 L CNN
+F 1 "Z" H 9280 4951 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 9200 5050 50  0001 C CNN
+F 3 "~" H 9200 5050 50  0001 C CNN
+	1    9200 5050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J29
 U 1 1 5D30CFF6
-P 13150 4400
-F 0 "J29" H 13230 4392 50  0000 L CNN
-F 1 "Z" H 13230 4301 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 13150 4400 50  0001 C CNN
-F 3 "~" H 13150 4400 50  0001 C CNN
-	1    13150 4400
+P 8800 5750
+F 0 "J29" H 8880 5742 50  0000 L CNN
+F 1 "Z" H 8880 5651 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 8800 5750 50  0001 C CNN
+F 3 "~" H 8800 5750 50  0001 C CNN
+	1    8800 5750
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	12600 4100 12950 4100
-Wire Wire Line
-	12600 4000 13050 4000
-Wire Wire Line
-	12600 3900 13150 3900
-Wire Wire Line
-	12600 3800 13250 3800
-Wire Wire Line
-	13250 4200 13250 3800
-Connection ~ 13250 3800
-Wire Wire Line
-	13250 3800 13350 3800
-Wire Wire Line
-	13150 4200 13150 3900
-Connection ~ 13150 3900
-Wire Wire Line
-	13150 3900 13350 3900
-Wire Wire Line
-	13050 4200 13050 4000
-Connection ~ 13050 4000
-Wire Wire Line
-	13050 4000 13350 4000
-Wire Wire Line
-	12950 4200 12950 4100
-Connection ~ 12950 4100
-Wire Wire Line
-	12950 4100 13350 4100
-Text GLabel 6550 2150 3    50   Input ~ 0
+Text GLabel 6900 1750 0    50   Input ~ 0
 Tmc_MISO
-Text GLabel 6550 3150 3    50   Input ~ 0
+Text GLabel 6900 3400 0    50   Input ~ 0
 Tmc_MISO
-Text GLabel 6550 4150 3    50   Input ~ 0
+Text GLabel 6900 5100 0    50   Input ~ 0
 Tmc_MISO
-Text GLabel 6550 5150 3    50   Input ~ 0
+Text GLabel 6900 6800 0    50   Input ~ 0
 Tmc_MISO
-Text GLabel 6850 2150 3    50   Input ~ 0
+Text GLabel 6900 2200 0    50   Input ~ 0
 Tmc_MOSI
-Text GLabel 6850 3150 3    50   Input ~ 0
+Text GLabel 6900 3850 0    50   Input ~ 0
 Tmc_MOSI
-Text GLabel 6850 4150 3    50   Input ~ 0
+Text GLabel 6900 5550 0    50   Input ~ 0
 Tmc_MOSI
-Text GLabel 6850 5150 3    50   Input ~ 0
+Text GLabel 6900 7250 0    50   Input ~ 0
 Tmc_MOSI
-Text GLabel 6750 2150 3    50   Input ~ 0
+Text GLabel 6900 2050 0    50   Input ~ 0
 Tmc_SCK
-Text GLabel 6750 3150 3    50   Input ~ 0
+Text GLabel 6900 3700 0    50   Input ~ 0
 Tmc_SCK
-Text GLabel 6750 4150 3    50   Input ~ 0
+Text GLabel 6900 5400 0    50   Input ~ 0
 Tmc_SCK
-Text GLabel 6750 5150 3    50   Input ~ 0
+Text GLabel 6900 7100 0    50   Input ~ 0
 Tmc_SCK
-Text GLabel 6650 2150 3    50   Input ~ 0
+Text GLabel 6900 1900 0    50   Input ~ 0
 X_CS
-Text GLabel 6350 3150 3    50   Input ~ 0
+Text GLabel 6900 3100 0    50   Input ~ 0
 Y_CS
-Text GLabel 6650 4150 3    50   Input ~ 0
+Text GLabel 6900 5250 0    50   Input ~ 0
 Z_CS
-Text GLabel 6650 5150 3    50   Input ~ 0
+Text GLabel 6900 6950 0    50   Input ~ 0
 E0_CS
-Text GLabel 8850 2850 2    50   Input ~ 0
+Text GLabel 10600 3300 2    50   Input ~ 0
 Tmc_SCK
-Text GLabel 8850 2950 2    50   Input ~ 0
+Text GLabel 10600 3400 2    50   Input ~ 0
 Tmc_MOSI
-Text GLabel 8150 2950 0    50   Input ~ 0
+Text GLabel 9900 3400 0    50   Input ~ 0
 Tmc_MISO
 $Comp
 L STM32F407VET6:LCD2004 J24
 U 1 1 5D30D01F
-P 9300 8100
-F 0 "J24" H 9628 8146 50  0000 L CNN
-F 1 "LCD2004" H 9628 8055 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B10B-XH-A_1x10_P2.50mm_Vertical" H 9100 8100 50  0001 C CNN
-F 3 "" H 9100 8100 50  0001 C CNN
-	1    9300 8100
+P 10350 8950
+F 0 "J24" H 10678 8996 50  0000 L CNN
+F 1 "LCD2004" H 10678 8905 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B10B-XH-A_1x10_P2.50mm_Vertical" H 10150 8950 50  0001 C CNN
+F 3 "" H 10150 8950 50  0001 C CNN
+	1    10350 8950
 	1    0    0    -1  
 $EndComp
-Text GLabel 9400 7700 1    50   Input ~ 0
+Text GLabel 10450 8550 1    50   Input ~ 0
 3V3
-Text GLabel 9100 7700 1    50   Input ~ 0
+Text GLabel 10150 8550 1    50   Input ~ 0
 KEYPAD_PIN
-Text GLabel 8150 2650 0    50   Input ~ 0
+Text GLabel 9900 3100 0    50   Input ~ 0
 KEYPAD_PIN
 $Comp
 L Connector:Screw_Terminal_01x02 JXXX1
@@ -2131,70 +1988,45 @@ F 3 "~" H 12550 7600 50  0001 C CNN
 $EndComp
 Text GLabel 12550 7400 1    50   Input ~ 0
 LIGHT_DIN
-Text GLabel 11250 3000 2    50   Input ~ 0
+Text GLabel 13000 3450 2    50   Input ~ 0
 LIGHT_DIN
 Text GLabel 12650 7400 1    50   Input ~ 0
 5V
 Text GLabel 12450 7400 1    50   Input ~ 0
 GND
-NoConn ~ 6450 2150
-NoConn ~ 6450 3150
-NoConn ~ 6450 4150
-NoConn ~ 6450 5150
-$Comp
-L STM32F407VET6:DRV_motor J36
-U 1 1 5C4B05AB
-P 12350 5250
-F 0 "J36" H 12350 5750 50  0000 C CNN
-F 1 "E0_motor" V 12250 5350 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 12500 4800 50  0001 C CNN
-F 3 "" H 12500 4800 50  0001 C CNN
-	1    12350 5250
-	1    0    0    -1  
-$EndComp
+NoConn ~ 6900 1600
+NoConn ~ 6900 3250
+NoConn ~ 6900 4950
+NoConn ~ 6900 6650
 $Comp
 L Connector_Generic:Conn_01x04 J41
 U 1 1 5C4AD22C
-P 12850 5200
-F 0 "J41" H 12930 5192 50  0000 L CNN
-F 1 "E0" H 12930 5101 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 12850 5200 50  0001 C CNN
-F 3 "~" H 12850 5200 50  0001 C CNN
-	1    12850 5200
+P 8750 6750
+F 0 "J41" H 8830 6742 50  0000 L CNN
+F 1 "E0" H 8830 6651 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 8750 6750 50  0001 C CNN
+F 3 "~" H 8750 6750 50  0001 C CNN
+	1    8750 6750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12600 5100 12650 5100
-Wire Wire Line
-	12600 5200 12650 5200
-Wire Wire Line
-	12600 5300 12650 5300
-Wire Wire Line
-	12600 5400 12650 5400
 $Comp
 L Device:CP_Small C10
 U 1 1 5C4B9316
-P 12750 4900
-F 0 "C10" H 12838 4946 50  0000 L CNN
-F 1 "100uF 35V" H 12838 4855 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x6.9" H 12750 4900 50  0001 C CNN
-F 3 "~" H 12750 4900 50  0001 C CNN
-	1    12750 4900
+P 8350 6400
+F 0 "C10" H 8100 6400 50  0000 L CNN
+F 1 "100uF" H 8450 6450 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x6.9" H 8350 6400 50  0001 C CNN
+F 3 "~" H 8350 6400 50  0001 C CNN
+	1    8350 6400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12750 4800 12600 4800
-Wire Wire Line
-	12600 4800 12600 4900
-Wire Wire Line
-	12750 5000 12600 5000
-Text GLabel 12600 5500 2    50   Input ~ 0
+Text GLabel 8000 7250 2    50   Input ~ 0
 3V3
-Text GLabel 12750 5000 2    50   Input ~ 0
+Text GLabel 8500 6500 2    50   Input ~ 0
 GND
-Text GLabel 12600 5600 2    50   Input ~ 0
+Text GLabel 8000 7400 2    50   Input ~ 0
 GND
-Text GLabel 12750 4800 2    50   Input ~ 0
+Text GLabel 8500 6200 2    50   Input ~ 0
 12V
 $Comp
 L Connector:USB_B J16
@@ -2271,15 +2103,15 @@ Wire Wire Line
 	15400 2750 15100 2750
 Text GLabel 15600 2650 2    50   Input ~ 0
 USB_DP
-Text GLabel 8150 2150 0    50   Input ~ 0
+Text GLabel 9900 2600 0    50   Input ~ 0
 X_CS
-Text GLabel 8850 2050 2    50   Input ~ 0
+Text GLabel 10600 2500 2    50   Input ~ 0
 Y_CS
-Text GLabel 10550 2200 0    50   Input ~ 0
+Text GLabel 12300 2650 0    50   Input ~ 0
 Z_CS
-Text GLabel 11250 2200 2    50   Input ~ 0
+Text GLabel 13000 2650 2    50   Input ~ 0
 E0_CS
-Text GLabel 8150 2850 0    50   Input ~ 0
+Text GLabel 9900 3300 0    50   Input ~ 0
 KEYPAD_PIN
 $Comp
 L Connector_Generic:Conn_01x09 J50
@@ -2292,51 +2124,267 @@ F 3 "~" H 15050 4100 50  0001 C CNN
 	1    15050 4100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8150 3250
+NoConn ~ 9900 3700
 $Comp
 L STM32F407VET6:Right J26
 U 1 1 5D30CC8F
-P 10900 2750
-F 0 "J26" H 10900 4165 50  0000 C CNN
-F 1 "Right" H 10900 4074 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x24_P2.54mm_Vertical" H 10900 2400 50  0001 C CNN
-F 3 "" H 10900 2400 50  0001 C CNN
-	1    10900 2750
+P 12650 3200
+F 0 "J26" H 12650 4615 50  0000 C CNN
+F 1 "Right" H 12650 4524 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x24_P2.54mm_Vertical" H 12650 2850 50  0001 C CNN
+F 3 "" H 12650 2850 50  0001 C CNN
+	1    12650 3200
 	1    0    0    -1  
 $EndComp
-Text GLabel 10550 1900 0    50   Input ~ 0
+Text GLabel 12300 2350 0    50   Input ~ 0
 GND
-Text GLabel 10550 1700 0    50   Input ~ 0
+Text GLabel 12300 2150 0    50   Input ~ 0
 3V3
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5D48E2E2
-P 10050 1950
-F 0 "SW1" V 10096 1902 50  0000 R CNN
-F 1 "Boot0" V 10005 1902 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 10050 2150 50  0001 C CNN
-F 3 "~" H 10050 2150 50  0001 C CNN
-	1    10050 1950
+P 11800 2400
+F 0 "SW1" V 11846 2352 50  0000 R CNN
+F 1 "Boot0" V 11755 2352 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 11800 2600 50  0001 C CNN
+F 3 "~" H 11800 2600 50  0001 C CNN
+	1    11800 2400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R6
 U 1 1 5D4F03A2
-P 10050 1600
-F 0 "R6" H 10120 1646 50  0000 L CNN
-F 1 "R4.7K" H 10120 1555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9980 1600 50  0001 C CNN
-F 3 "~" H 10050 1600 50  0001 C CNN
-	1    10050 1600
+P 11800 2050
+F 0 "R6" H 11870 2096 50  0000 L CNN
+F 1 "R4.7K" H 11870 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11730 2050 50  0001 C CNN
+F 3 "~" H 11800 2050 50  0001 C CNN
+	1    11800 2050
 	1    0    0    -1  
 $EndComp
-Text GLabel 10050 1450 1    50   Input ~ 0
+Text GLabel 11800 1900 1    50   Input ~ 0
 GND
-Text GLabel 10050 2150 3    50   Input ~ 0
+Text GLabel 11800 2600 3    50   Input ~ 0
 3V3
 Wire Wire Line
-	10050 1800 10550 1800
+	11800 2250 12300 2250
 Wire Wire Line
-	10050 1750 10050 1800
-Connection ~ 10050 1750
+	11800 2200 11800 2250
+Connection ~ 11800 2200
+$Comp
+L Motor_driver:Step_stick X_motor1
+U 1 1 5D2D7065
+P 7000 2400
+F 0 "X_motor1" H 7150 3800 50  0000 C CNN
+F 1 "Step_stick" H 7200 2300 50  0000 C CNN
+F 2 "Motor_driver:Motor" H 7000 2550 50  0001 C CNN
+F 3 "" H 7000 2550 50  0001 C CNN
+	1    7000 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 6900 1450 0    50   Input ~ 0
+X_Step
+Text GLabel 6900 1300 0    50   Input ~ 0
+X_Dir
+Wire Wire Line
+	8000 1300 8150 1300
+Wire Wire Line
+	8150 1300 8150 1150
+Wire Wire Line
+	8150 1150 8300 1150
+Wire Wire Line
+	8300 1250 8300 1150
+Connection ~ 8300 1150
+Wire Wire Line
+	8300 1150 8500 1150
+Wire Wire Line
+	8000 1450 8300 1450
+Connection ~ 8300 1450
+Wire Wire Line
+	8300 1450 8500 1450
+Wire Wire Line
+	8000 1600 8350 1600
+Wire Wire Line
+	8000 1750 8150 1750
+Wire Wire Line
+	8150 1750 8150 1700
+Wire Wire Line
+	8150 1700 8350 1700
+Wire Wire Line
+	8000 1900 8200 1900
+Wire Wire Line
+	8200 1900 8200 1800
+Wire Wire Line
+	8200 1800 8350 1800
+Wire Wire Line
+	8350 1900 8300 1900
+Wire Wire Line
+	8300 1900 8300 2050
+Wire Wire Line
+	8300 2050 8000 2050
+Wire Wire Line
+	8500 2350 8000 2350
+Wire Wire Line
+	8000 2200 8500 2200
+$Comp
+L Motor_driver:Step_stick Y_motor1
+U 1 1 5D399DEA
+P 7000 4050
+F 0 "Y_motor1" H 7150 5450 50  0000 C CNN
+F 1 "Step_stick" H 7200 3950 50  0000 C CNN
+F 2 "Motor_driver:Motor" H 7000 4200 50  0001 C CNN
+F 3 "" H 7000 4200 50  0001 C CNN
+	1    7000 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 3250 8000 3250
+Wire Wire Line
+	8000 3400 8150 3400
+Wire Wire Line
+	8150 3400 8150 3350
+Wire Wire Line
+	8150 3350 8350 3350
+Wire Wire Line
+	8000 3550 8200 3550
+Wire Wire Line
+	8200 3550 8200 3450
+Wire Wire Line
+	8200 3450 8350 3450
+Wire Wire Line
+	8000 3700 8300 3700
+Wire Wire Line
+	8300 3700 8300 3550
+Wire Wire Line
+	8300 3550 8350 3550
+Wire Wire Line
+	8000 3100 8300 3100
+Wire Wire Line
+	8000 2950 8150 2950
+Wire Wire Line
+	8150 2800 8300 2800
+Wire Wire Line
+	8300 2800 8300 2900
+Wire Wire Line
+	8150 2800 8150 2950
+Wire Wire Line
+	8300 2800 8500 2800
+Connection ~ 8300 2800
+Wire Wire Line
+	8300 3100 8500 3100
+Connection ~ 8300 3100
+$Comp
+L Motor_driver:Step_stick Z_motor1
+U 1 1 5D46D9E3
+P 7000 5750
+F 0 "Z_motor1" H 7150 7150 50  0000 C CNN
+F 1 "Step_stick" H 7200 5650 50  0000 C CNN
+F 2 "Motor_driver:Motor" H 7000 5900 50  0001 C CNN
+F 3 "" H 7000 5900 50  0001 C CNN
+	1    7000 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 5100 8150 5100
+Wire Wire Line
+	8150 5100 8150 5050
+Wire Wire Line
+	8000 5250 8200 5250
+Wire Wire Line
+	8200 5250 8200 5150
+Wire Wire Line
+	8000 5400 8300 5400
+Wire Wire Line
+	8300 5400 8300 5250
+Wire Wire Line
+	8900 5550 8900 4950
+Wire Wire Line
+	8900 4950 9000 4950
+Wire Wire Line
+	8000 4950 8900 4950
+Connection ~ 8900 4950
+Wire Wire Line
+	8150 5050 8800 5050
+Wire Wire Line
+	8800 5550 8800 5050
+Connection ~ 8800 5050
+Wire Wire Line
+	8800 5050 9000 5050
+Wire Wire Line
+	8200 5150 8700 5150
+Wire Wire Line
+	8700 5550 8700 5150
+Connection ~ 8700 5150
+Wire Wire Line
+	8700 5150 9000 5150
+Wire Wire Line
+	8300 5250 8600 5250
+Wire Wire Line
+	8600 5550 8600 5250
+Connection ~ 8600 5250
+Wire Wire Line
+	8600 5250 9000 5250
+Wire Wire Line
+	8500 4800 8350 4800
+Connection ~ 8350 4800
+Wire Wire Line
+	8350 4800 8000 4800
+Wire Wire Line
+	8000 4650 8150 4650
+Wire Wire Line
+	8150 4650 8150 4500
+Wire Wire Line
+	8150 4500 8350 4500
+Wire Wire Line
+	8350 4600 8350 4500
+Connection ~ 8350 4500
+Wire Wire Line
+	8350 4500 8500 4500
+$Comp
+L Motor_driver:Step_stick EO_motor1
+U 1 1 5D5F4ECF
+P 7000 7450
+F 0 "EO_motor1" H 7150 8850 50  0000 C CNN
+F 1 "Step_stick" H 7200 7350 50  0000 C CNN
+F 2 "Motor_driver:Motor" H 7000 7600 50  0001 C CNN
+F 3 "" H 7000 7600 50  0001 C CNN
+	1    7000 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 6650 8000 6650
+Wire Wire Line
+	8000 6800 8150 6800
+Wire Wire Line
+	8150 6800 8150 6750
+Wire Wire Line
+	8150 6750 8550 6750
+Wire Wire Line
+	8000 6950 8200 6950
+Wire Wire Line
+	8200 6950 8200 6850
+Wire Wire Line
+	8200 6850 8550 6850
+Wire Wire Line
+	8000 7100 8300 7100
+Wire Wire Line
+	8300 7100 8300 6950
+Wire Wire Line
+	8300 6950 8550 6950
+Wire Wire Line
+	8000 6500 8350 6500
+Wire Wire Line
+	8000 6350 8150 6350
+Wire Wire Line
+	8150 6350 8150 6200
+Connection ~ 8350 6500
+Wire Wire Line
+	8150 6200 8350 6200
+Wire Wire Line
+	8350 6300 8350 6200
+Wire Wire Line
+	8350 6500 8600 6500
+Connection ~ 8350 6200
+Wire Wire Line
+	8350 6200 8500 6200
 $EndSCHEMATC

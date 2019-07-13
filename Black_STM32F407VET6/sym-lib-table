@@ -2,4 +2,5 @@
   (lib (name STM32F407VET6)(type Legacy)(uri ${KIPRJMOD}/STM32F407VET6.lib)(options "")(descr ""))
   (lib (name tran)(type Legacy)(uri ${KIPRJMOD}/tran.lib)(options "")(descr ""))
   (lib (name STM32F407VET6-rescue)(type Legacy)(uri ${KIPRJMOD}/STM32F407VET6-rescue.lib)(options "")(descr ""))
+  (lib (name Motor_driver)(type Legacy)(uri ${KIPRJMOD}/Motor_driver.lib)(options "")(descr ""))
 )
