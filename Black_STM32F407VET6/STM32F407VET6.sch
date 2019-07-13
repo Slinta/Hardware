@@ -1128,7 +1128,7 @@ U 1 1 5C4B4AC4
 P 15200 6950
 F 0 "J5" H 15280 6942 50  0000 L CNN
 F 1 "+ VIN -" H 15280 6851 50  0000 L CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type055_RT01502HDWU_1x02_P5.00mm_Horizontal" H 15200 6950 50  0001 C CNN
+F 2 "SH_Connectors:KF7.62_2P" H 15200 6950 50  0001 C CNN
 F 3 "~" H 15200 6950 50  0001 C CNN
 	1    15200 6950
 	1    0    0    1   
@@ -1288,7 +1288,7 @@ U 1 1 5D53C77B
 P 5400 1400
 F 0 "J10" H 5480 1392 50  0000 L CNN
 F 1 "- HotBed +" H 5480 1301 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 5400 1400 50  0001 C CNN
+F 2 "SH_Connectors:KF7.62_2P" H 5400 1400 50  0001 C CNN
 F 3 "~" H 5400 1400 50  0001 C CNN
 	1    5400 1400
 	1    0    0    -1  
@@ -1387,7 +1387,7 @@ U 1 1 5D56044A
 P 5400 3050
 F 0 "J11" H 5480 3042 50  0000 L CNN
 F 1 "Heater0" H 5480 2951 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 5400 3050 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5400 3050 50  0001 C CNN
 F 3 "~" H 5400 3050 50  0001 C CNN
 	1    5400 3050
 	1    0    0    -1  
@@ -1442,7 +1442,7 @@ U 1 1 5D5737B5
 P 5400 4650
 F 0 "J43" H 5480 4642 50  0000 L CNN
 F 1 "Heater1" H 5480 4551 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 5400 4650 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5400 4650 50  0001 C CNN
 F 3 "~" H 5400 4650 50  0001 C CNN
 	1    5400 4650
 	1    0    0    -1  
@@ -1579,7 +1579,7 @@ F 3 "~" H 4750 9350 50  0001 C CNN
 	1    4750 9350
 	1    0    0    -1  
 $EndComp
-Text GLabel 10550 8550 1    50   Input ~ 0
+Text GLabel 10000 6750 1    50   Input ~ 0
 GND
 Text GLabel 12200 4900 1    50   Input ~ 0
 GND
@@ -1592,66 +1592,34 @@ Text GLabel 12200 5600 3    50   Input ~ 0
 Reset
 Text GLabel 4400 8250 1    50   Input ~ 0
 GND
-Text GLabel 9900 2200 0    50   Input ~ 0
-3V3
-Text GLabel 9900 2300 0    50   Input ~ 0
-3V3
-Text GLabel 10600 3000 2    50   Input ~ 0
-3V3
 Text GLabel 12300 2050 0    50   Input ~ 0
-3V3
-Text GLabel 10600 2200 2    50   Input ~ 0
-3V3
-Text GLabel 10600 2300 2    50   Input ~ 0
 3V3
 Text GLabel 13000 2050 2    50   Input ~ 0
 3V3
 Text GLabel 13000 2150 2    50   Input ~ 0
 3V3
-Text GLabel 9900 2400 0    50   Input ~ 0
-GND
 Text GLabel 12300 2450 0    50   Input ~ 0
-GND
-Text GLabel 9900 3000 0    50   Input ~ 0
-GND
-Text GLabel 10600 2400 2    50   Input ~ 0
 GND
 Text GLabel 13000 2350 2    50   Input ~ 0
 GND
 Text GLabel 13000 2450 2    50   Input ~ 0
 GND
-Text GLabel 9900 2000 0    50   Input ~ 0
+Text GLabel 10000 7550 3    50   Input ~ 0
 5V
-Text GLabel 10600 2100 2    50   Input ~ 0
-5V
-Text GLabel 10600 2000 2    50   Input ~ 0
-5V
-Text GLabel 9900 2100 0    50   Input ~ 0
-5V
-Text GLabel 10550 9350 3    50   Input ~ 0
-5V
-Text GLabel 10350 8550 1    50   Input ~ 0
+Text GLabel 9800 6750 1    50   Input ~ 0
 LCDRS
-Text GLabel 10350 9350 3    50   Input ~ 0
+Text GLabel 9800 7550 3    50   Input ~ 0
 LCD5
-Text GLabel 10150 9350 3    50   Input ~ 0
+Text GLabel 9600 7550 3    50   Input ~ 0
 LCD7
-Text GLabel 10250 9350 3    50   Input ~ 0
+Text GLabel 9700 7550 3    50   Input ~ 0
 LCD6
-Text GLabel 10450 9350 3    50   Input ~ 0
+Text GLabel 9900 7550 3    50   Input ~ 0
 LCD4
-Text GLabel 10250 8550 1    50   Input ~ 0
+Text GLabel 9700 6750 1    50   Input ~ 0
 LCDE
 Text GLabel 10700 4900 1    50   Input ~ 0
 3V3
-Text GLabel 9900 2800 0    50   Input ~ 0
-T0
-Text GLabel 9900 2900 0    50   Input ~ 0
-TB
-Text GLabel 10600 2800 2    50   Input ~ 0
-T1
-Text GLabel 10600 2900 2    50   Input ~ 0
-TC
 Text GLabel 11700 5600 3    50   Input ~ 0
 Fan0
 Text GLabel 11800 5600 3    50   Input ~ 0
@@ -1723,7 +1691,7 @@ Text GLabel 4250 9250 1    50   Input ~ 0
 Z-
 Text GLabel 4550 9250 1    50   Input ~ 0
 Z+
-Text GLabel 6900 2350 0    50   Input ~ 0
+Text GLabel 6900 1300 0    50   Input ~ 0
 X_En
 NoConn ~ 13000 4250
 NoConn ~ 13000 4350
@@ -1770,11 +1738,6 @@ Text GLabel 12300 3550 0    50   Input ~ 0
 USB_DM
 Text GLabel 13000 3550 2    50   Input ~ 0
 USB_DP
-Text GLabel 10600 4300 2    50   Input ~ 0
-MISO
-Text GLabel 9900 4300 0    50   Input ~ 0
-CLK
-NoConn ~ 10600 4200
 Text GLabel 12300 3850 0    50   Input ~ 0
 SDIO_D0
 Text GLabel 13000 3750 2    50   Input ~ 0
@@ -1787,55 +1750,25 @@ Text GLabel 12300 3350 0    50   Input ~ 0
 SDIO_SCK
 Text GLabel 13000 3150 2    50   Input ~ 0
 SDIO_CMD
-NoConn ~ 9900 4100
-NoConn ~ 9900 4000
-NoConn ~ 9900 3900
-NoConn ~ 9900 3800
-NoConn ~ 10600 4000
-NoConn ~ 10600 3900
-NoConn ~ 10600 3800
-NoConn ~ 10600 3700
-Text GLabel 10600 2700 2    50   Input ~ 0
-Y_Dir
 Text GLabel 13000 2950 2    50   Input ~ 0
 Y_En
-Text GLabel 10600 2600 2    50   Input ~ 0
-Y_Step
 Text GLabel 11600 5600 3    50   Input ~ 0
 X-
-Text GLabel 10600 3100 2    50   Input ~ 0
-HotBed
-Text GLabel 9900 3200 0    50   Input ~ 0
-Heater0
-Text GLabel 9900 3500 0    50   Input ~ 0
-X_Dir
-Text GLabel 10600 3200 2    50   Input ~ 0
-Heater1
 Text GLabel 12300 4150 0    50   Input ~ 0
 Y-
-NoConn ~ 10600 3500
-Text GLabel 9900 2500 0    50   Input ~ 0
-X_Step
-NoConn ~ 10600 3600
-Text GLabel 9900 2700 0    50   Input ~ 0
-X_En
-Text GLabel 9900 4200 0    50   Input ~ 0
-SS2
-Text GLabel 10600 4100 2    50   Input ~ 0
-SS1
-Text GLabel 6900 4000 0    50   Input ~ 0
-Y_En
-Text GLabel 6900 3550 0    50   Input ~ 0
-Y_Step
 Text GLabel 6900 2950 0    50   Input ~ 0
+Y_En
+Text GLabel 6900 3850 0    50   Input ~ 0
+Y_Step
+Text GLabel 6900 4000 0    50   Input ~ 0
 Y_Dir
-Text GLabel 6900 4800 0    50   Input ~ 0
+Text GLabel 6900 5550 0    50   Input ~ 0
 Z_Step
-Text GLabel 6900 4650 0    50   Input ~ 0
+Text GLabel 6900 5700 0    50   Input ~ 0
 Z_Dir
-Text GLabel 6900 6500 0    50   Input ~ 0
+Text GLabel 6900 7250 0    50   Input ~ 0
 E0_Step
-Text GLabel 6900 6350 0    50   Input ~ 0
+Text GLabel 6900 7400 0    50   Input ~ 0
 E0_Dir
 Text GLabel 11000 4900 1    50   Input ~ 0
 MOSI
@@ -1847,9 +1780,9 @@ NoConn ~ 11400 4900
 NoConn ~ 12300 3250
 NoConn ~ 13000 2850
 NoConn ~ 12300 2850
-Text GLabel 6900 5700 0    50   Input ~ 0
+Text GLabel 6900 4650 0    50   Input ~ 0
 Z_En
-Text GLabel 6900 7400 0    50   Input ~ 0
+Text GLabel 6900 6350 0    50   Input ~ 0
 E0_En
 Wire Wire Line
 	4300 9450 4550 9450
@@ -1873,17 +1806,6 @@ GND
 Text GLabel 8500 4500 2    50   Input ~ 0
 12V
 $Comp
-L STM32F407VET6:Left J22
-U 1 1 5D30CFEA
-P 10250 3150
-F 0 "J22" H 10250 4565 50  0000 C CNN
-F 1 "Left" H 10250 4474 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x24_P2.54mm_Vertical" H 10100 3450 50  0001 C CNN
-F 3 "" H 10100 3450 50  0001 C CNN
-	1    10250 3150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x04 J30
 U 1 1 5D30CFF0
 P 9200 5050
@@ -1905,60 +1827,52 @@ F 3 "~" H 8800 5750 50  0001 C CNN
 	1    8800 5750
 	0    1    1    0   
 $EndComp
-Text GLabel 6900 1750 0    50   Input ~ 0
-Tmc_MISO
-Text GLabel 6900 3400 0    50   Input ~ 0
-Tmc_MISO
-Text GLabel 6900 5100 0    50   Input ~ 0
-Tmc_MISO
-Text GLabel 6900 6800 0    50   Input ~ 0
-Tmc_MISO
-Text GLabel 6900 2200 0    50   Input ~ 0
-Tmc_MOSI
-Text GLabel 6900 3850 0    50   Input ~ 0
-Tmc_MOSI
-Text GLabel 6900 5550 0    50   Input ~ 0
-Tmc_MOSI
-Text GLabel 6900 7250 0    50   Input ~ 0
-Tmc_MOSI
-Text GLabel 6900 2050 0    50   Input ~ 0
-Tmc_SCK
-Text GLabel 6900 3700 0    50   Input ~ 0
-Tmc_SCK
-Text GLabel 6900 5400 0    50   Input ~ 0
-Tmc_SCK
-Text GLabel 6900 7100 0    50   Input ~ 0
-Tmc_SCK
 Text GLabel 6900 1900 0    50   Input ~ 0
-X_CS
-Text GLabel 6900 3100 0    50   Input ~ 0
-Y_CS
-Text GLabel 6900 5250 0    50   Input ~ 0
-Z_CS
-Text GLabel 6900 6950 0    50   Input ~ 0
-E0_CS
-Text GLabel 10600 3300 2    50   Input ~ 0
-Tmc_SCK
-Text GLabel 10600 3400 2    50   Input ~ 0
-Tmc_MOSI
-Text GLabel 9900 3400 0    50   Input ~ 0
 Tmc_MISO
+Text GLabel 6900 3550 0    50   Input ~ 0
+Tmc_MISO
+Text GLabel 6900 5250 0    50   Input ~ 0
+Tmc_MISO
+Text GLabel 6900 6950 0    50   Input ~ 0
+Tmc_MISO
+Text GLabel 6900 1450 0    50   Input ~ 0
+Tmc_MOSI
+Text GLabel 6900 3100 0    50   Input ~ 0
+Tmc_MOSI
+Text GLabel 6900 4800 0    50   Input ~ 0
+Tmc_MOSI
+Text GLabel 6900 6500 0    50   Input ~ 0
+Tmc_MOSI
+Text GLabel 6900 1600 0    50   Input ~ 0
+Tmc_SCK
+Text GLabel 6900 3250 0    50   Input ~ 0
+Tmc_SCK
+Text GLabel 6900 4950 0    50   Input ~ 0
+Tmc_SCK
+Text GLabel 6900 6650 0    50   Input ~ 0
+Tmc_SCK
+Text GLabel 6900 1750 0    50   Input ~ 0
+X_CS
+Text GLabel 6900 3400 0    50   Input ~ 0
+Y_CS
+Text GLabel 6900 5100 0    50   Input ~ 0
+Z_CS
+Text GLabel 6900 6800 0    50   Input ~ 0
+E0_CS
 $Comp
 L STM32F407VET6:LCD2004 J24
 U 1 1 5D30D01F
-P 10350 8950
-F 0 "J24" H 10678 8996 50  0000 L CNN
-F 1 "LCD2004" H 10678 8905 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B10B-XH-A_1x10_P2.50mm_Vertical" H 10150 8950 50  0001 C CNN
-F 3 "" H 10150 8950 50  0001 C CNN
-	1    10350 8950
+P 9800 7150
+F 0 "J24" H 10128 7196 50  0000 L CNN
+F 1 "LCD2004" H 10128 7105 50  0000 L CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 9600 7150 50  0001 C CNN
+F 3 "" H 9600 7150 50  0001 C CNN
+	1    9800 7150
 	1    0    0    -1  
 $EndComp
-Text GLabel 10450 8550 1    50   Input ~ 0
+Text GLabel 9900 6750 1    50   Input ~ 0
 3V3
-Text GLabel 10150 8550 1    50   Input ~ 0
-KEYPAD_PIN
-Text GLabel 9900 3100 0    50   Input ~ 0
+Text GLabel 9600 6750 1    50   Input ~ 0
 KEYPAD_PIN
 $Comp
 L Connector:Screw_Terminal_01x02 JXXX1
@@ -1966,7 +1880,7 @@ U 1 1 5D30D032
 P 13400 7600
 F 0 "JXXX1" H 13480 7592 50  0000 L CNN
 F 1 "ESC_POWER" H 13480 7501 50  0000 L CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type055_RT01502HDWU_1x02_P5.00mm_Horizontal" H 13400 7600 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 13400 7600 50  0001 C CNN
 F 3 "~" H 13400 7600 50  0001 C CNN
 	1    13400 7600
 	0    1    1    0   
@@ -1994,10 +1908,6 @@ Text GLabel 12650 7400 1    50   Input ~ 0
 5V
 Text GLabel 12450 7400 1    50   Input ~ 0
 GND
-NoConn ~ 6900 1600
-NoConn ~ 6900 3250
-NoConn ~ 6900 4950
-NoConn ~ 6900 6650
 $Comp
 L Connector_Generic:Conn_01x04 J41
 U 1 1 5C4AD22C
@@ -2103,16 +2013,10 @@ Wire Wire Line
 	15400 2750 15100 2750
 Text GLabel 15600 2650 2    50   Input ~ 0
 USB_DP
-Text GLabel 9900 2600 0    50   Input ~ 0
-X_CS
-Text GLabel 10600 2500 2    50   Input ~ 0
-Y_CS
 Text GLabel 12300 2650 0    50   Input ~ 0
 Z_CS
 Text GLabel 13000 2650 2    50   Input ~ 0
 E0_CS
-Text GLabel 9900 3300 0    50   Input ~ 0
-KEYPAD_PIN
 $Comp
 L Connector_Generic:Conn_01x09 J50
 U 1 1 5C5D7569
@@ -2124,7 +2028,6 @@ F 3 "~" H 15050 4100 50  0001 C CNN
 	1    15050 4100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 9900 3700
 $Comp
 L STM32F407VET6:Right J26
 U 1 1 5D30CC8F
@@ -2182,9 +2085,9 @@ F 3 "" H 7000 2550 50  0001 C CNN
 	1    7000 2400
 	1    0    0    -1  
 $EndComp
-Text GLabel 6900 1450 0    50   Input ~ 0
+Text GLabel 6900 2200 0    50   Input ~ 0
 X_Step
-Text GLabel 6900 1300 0    50   Input ~ 0
+Text GLabel 6900 2350 0    50   Input ~ 0
 X_Dir
 Wire Wire Line
 	8000 1300 8150 1300
@@ -2387,4 +2290,82 @@ Wire Wire Line
 Connection ~ 8350 6200
 Wire Wire Line
 	8350 6200 8500 6200
+Wire Wire Line
+	13000 2250 13000 2350
+NoConn ~ 6900 2050
+NoConn ~ 6900 3700
+NoConn ~ 6900 5400
+NoConn ~ 6900 7100
+$Comp
+L Connector_Generic:Conn_02x03_Counter_Clockwise J18
+U 1 1 5D7813B1
+P 10100 4350
+F 0 "J18" H 10150 4667 50  0000 C CNN
+F 1 "Left Spi" H 10150 4576 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 10100 4350 50  0001 C CNN
+F 3 "~" H 10100 4350 50  0001 C CNN
+	1    10100 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x11_Odd_Even J17
+U 1 1 5D7A7A3C
+P 10100 2850
+F 0 "J17" H 10150 3567 50  0000 C CNN
+F 1 "Left Analog" H 10150 3476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x11_P2.54mm_Vertical" H 10100 2850 50  0001 C CNN
+F 3 "~" H 10100 2850 50  0001 C CNN
+	1    10100 2850
+	1    0    0    -1  
+$EndComp
+Text GLabel 10400 4250 2    50   Input ~ 0
+SS1
+Text GLabel 10400 4450 2    50   Input ~ 0
+MISO
+Text GLabel 9900 4450 0    50   Input ~ 0
+CLK
+Text GLabel 9900 4350 0    50   Input ~ 0
+SS2
+Text GLabel 10400 2850 2    50   Input ~ 0
+3V3
+Text GLabel 10400 2650 2    50   Input ~ 0
+T1
+Text GLabel 10400 2750 2    50   Input ~ 0
+TC
+Text GLabel 10400 2550 2    50   Input ~ 0
+Y_Dir
+Text GLabel 10400 2450 2    50   Input ~ 0
+Y_Step
+Text GLabel 10400 2950 2    50   Input ~ 0
+HotBed
+Text GLabel 10400 3050 2    50   Input ~ 0
+Heater1
+Text GLabel 10400 3150 2    50   Input ~ 0
+Tmc_SCK
+Text GLabel 10400 3250 2    50   Input ~ 0
+Tmc_MOSI
+Text GLabel 10400 2350 2    50   Input ~ 0
+Y_CS
+Text GLabel 9900 2850 0    50   Input ~ 0
+GND
+Text GLabel 9900 2650 0    50   Input ~ 0
+T0
+Text GLabel 9900 2750 0    50   Input ~ 0
+TB
+Text GLabel 9900 3050 0    50   Input ~ 0
+Heater0
+Text GLabel 9900 3350 0    50   Input ~ 0
+X_Dir
+Text GLabel 9900 2350 0    50   Input ~ 0
+X_Step
+Text GLabel 9900 2550 0    50   Input ~ 0
+X_En
+Text GLabel 9900 3250 0    50   Input ~ 0
+Tmc_MISO
+Text GLabel 9900 2950 0    50   Input ~ 0
+KEYPAD_PIN
+Text GLabel 9900 2450 0    50   Input ~ 0
+X_CS
+Text GLabel 9900 3150 0    50   Input ~ 0
+KEYPAD_PIN
 $EndSCHEMATC
