@@ -63,8 +63,8 @@ L Device:CP_Small C1
 U 1 1 5C4FFC01
 P 2800 8100
 F 0 "C1" H 2900 8050 50  0000 L CNN
-F 1 "10uF 16V" H 2900 8150 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2800 8100 50  0001 C CNN
+F 1 "10uF 25V" H 2900 8150 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 2800 8100 50  0001 C CNN
 F 3 "~" H 2800 8100 50  0001 C CNN
 	1    2800 8100
 	1    0    0    -1  
@@ -74,8 +74,8 @@ L Device:CP_Small C2
 U 1 1 5C50074F
 P 2800 8550
 F 0 "C2" H 2712 8504 50  0000 R CNN
-F 1 "10uF 16V" H 2712 8595 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2800 8550 50  0001 C CNN
+F 1 "10uF 25V" H 2712 8595 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 2800 8550 50  0001 C CNN
 F 3 "~" H 2800 8550 50  0001 C CNN
 	1    2800 8550
 	-1   0    0    -1  
@@ -85,8 +85,8 @@ L Device:CP_Small C3
 U 1 1 5C50303A
 P 2800 9000
 F 0 "C3" H 2712 8954 50  0000 R CNN
-F 1 "10uF 16V" H 2712 9045 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2800 9000 50  0001 C CNN
+F 1 "10uF 25V" H 2712 9045 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 2800 9000 50  0001 C CNN
 F 3 "~" H 2800 9000 50  0001 C CNN
 	1    2800 9000
 	-1   0    0    -1  
@@ -96,8 +96,8 @@ L Device:CP_Small C4
 U 1 1 5C505926
 P 2800 9450
 F 0 "C4" H 2712 9404 50  0000 R CNN
-F 1 "10uF 16V" H 2712 9495 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2800 9450 50  0001 C CNN
+F 1 "10uF 25V" H 2712 9495 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 2800 9450 50  0001 C CNN
 F 3 "~" H 2800 9450 50  0001 C CNN
 	1    2800 9450
 	-1   0    0    -1  
@@ -1932,7 +1932,7 @@ F 3 "~" H 8350 6400 50  0001 C CNN
 $EndComp
 Text GLabel 8000 7250 2    50   Input ~ 0
 3V3
-Text GLabel 8500 6500 2    50   Input ~ 0
+Text GLabel 8600 6500 2    50   Input ~ 0
 GND
 Text GLabel 8000 7400 2    50   Input ~ 0
 GND
@@ -2296,76 +2296,95 @@ NoConn ~ 6900 2050
 NoConn ~ 6900 3700
 NoConn ~ 6900 5400
 NoConn ~ 6900 7100
-$Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J18
-U 1 1 5D7813B1
-P 10100 4350
-F 0 "J18" H 10150 4667 50  0000 C CNN
-F 1 "Left Spi" H 10150 4576 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 10100 4350 50  0001 C CNN
-F 3 "~" H 10100 4350 50  0001 C CNN
-	1    10100 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x11_Odd_Even J17
-U 1 1 5D7A7A3C
-P 10100 2850
-F 0 "J17" H 10150 3567 50  0000 C CNN
-F 1 "Left Analog" H 10150 3476 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x11_P2.54mm_Vertical" H 10100 2850 50  0001 C CNN
-F 3 "~" H 10100 2850 50  0001 C CNN
-	1    10100 2850
-	1    0    0    -1  
-$EndComp
-Text GLabel 10400 4250 2    50   Input ~ 0
+Text GLabel 10500 4150 2    50   Input ~ 0
 SS1
-Text GLabel 10400 4450 2    50   Input ~ 0
+Text GLabel 10500 4350 2    50   Input ~ 0
 MISO
-Text GLabel 9900 4450 0    50   Input ~ 0
+Text GLabel 9800 4350 0    50   Input ~ 0
 CLK
-Text GLabel 9900 4350 0    50   Input ~ 0
+Text GLabel 9800 4250 0    50   Input ~ 0
 SS2
-Text GLabel 10400 2850 2    50   Input ~ 0
+Text GLabel 10500 3300 2    50   Input ~ 0
 3V3
-Text GLabel 10400 2650 2    50   Input ~ 0
+Text GLabel 10500 3200 2    50   Input ~ 0
 T1
-Text GLabel 10400 2750 2    50   Input ~ 0
+Text GLabel 10500 3100 2    50   Input ~ 0
 TC
-Text GLabel 10400 2550 2    50   Input ~ 0
+Text GLabel 10500 3000 2    50   Input ~ 0
 Y_Dir
-Text GLabel 10400 2450 2    50   Input ~ 0
+Text GLabel 10500 2900 2    50   Input ~ 0
 Y_Step
-Text GLabel 10400 2950 2    50   Input ~ 0
+Text GLabel 10500 3400 2    50   Input ~ 0
 HotBed
-Text GLabel 10400 3050 2    50   Input ~ 0
+Text GLabel 10500 3500 2    50   Input ~ 0
 Heater1
-Text GLabel 10400 3150 2    50   Input ~ 0
+Text GLabel 10500 3600 2    50   Input ~ 0
 Tmc_SCK
-Text GLabel 10400 3250 2    50   Input ~ 0
+Text GLabel 10500 3700 2    50   Input ~ 0
 Tmc_MOSI
-Text GLabel 10400 2350 2    50   Input ~ 0
+Text GLabel 10500 2800 2    50   Input ~ 0
 Y_CS
-Text GLabel 9900 2850 0    50   Input ~ 0
+Text GLabel 9800 3300 0    50   Input ~ 0
 GND
-Text GLabel 9900 2650 0    50   Input ~ 0
+Text GLabel 9800 3200 0    50   Input ~ 0
 T0
-Text GLabel 9900 2750 0    50   Input ~ 0
+Text GLabel 9800 3100 0    50   Input ~ 0
 TB
-Text GLabel 9900 3050 0    50   Input ~ 0
+Text GLabel 9800 3500 0    50   Input ~ 0
 Heater0
-Text GLabel 9900 3350 0    50   Input ~ 0
+Text GLabel 9800 3800 0    50   Input ~ 0
 X_Dir
-Text GLabel 9900 2350 0    50   Input ~ 0
+Text GLabel 9800 2800 0    50   Input ~ 0
 X_Step
-Text GLabel 9900 2550 0    50   Input ~ 0
+Text GLabel 9800 3000 0    50   Input ~ 0
 X_En
-Text GLabel 9900 3250 0    50   Input ~ 0
+Text GLabel 9800 3700 0    50   Input ~ 0
 Tmc_MISO
-Text GLabel 9900 2950 0    50   Input ~ 0
+Text GLabel 9800 3400 0    50   Input ~ 0
 KEYPAD_PIN
-Text GLabel 9900 2450 0    50   Input ~ 0
+Text GLabel 9800 2900 0    50   Input ~ 0
 X_CS
-Text GLabel 9900 3150 0    50   Input ~ 0
+Text GLabel 9800 3600 0    50   Input ~ 0
 KEYPAD_PIN
+$Comp
+L STM32F407VET6:LeftAnalog U1
+U 1 1 5D47DD57
+P 10150 3350
+F 0 "U1" H 10150 4265 50  0000 C CNN
+F 1 "LeftAnalog" H 10150 4174 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x11_P2.54mm_Vertical" H 10150 4100 50  0001 C CNN
+F 3 "" H 10150 4100 50  0001 C CNN
+	1    10150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F407VET6:LeftSpi J17
+U 1 1 5D4F50E7
+P 10150 4250
+F 0 "J17" H 10150 4575 50  0000 C CNN
+F 1 "LeftSpi" H 10150 4484 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 10150 4500 50  0001 C CNN
+F 3 "" H 10150 4500 50  0001 C CNN
+	1    10150 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 9800 2100 0    50   Input ~ 0
+3V3
+Text GLabel 10500 2100 2    50   Input ~ 0
+3V3
+Text GLabel 9800 2000 0    50   Input ~ 0
+5V
+Text GLabel 10500 2000 2    50   Input ~ 0
+5V
+$Comp
+L STM32F407VET6:Left5V U2
+U 1 1 5D592F71
+P 10150 2150
+F 0 "U2" H 10150 2525 50  0000 C CNN
+F 1 "Left5V" H 10150 2434 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 10150 2500 50  0001 C CNN
+F 3 "" H 10150 2500 50  0001 C CNN
+	1    10150 2150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
