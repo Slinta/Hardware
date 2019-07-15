@@ -1285,12 +1285,12 @@ HotBed
 $Comp
 L Connector_Generic:Conn_01x02 J10
 U 1 1 5D53C77B
-P 5400 1400
-F 0 "J10" H 5480 1392 50  0000 L CNN
-F 1 "- HotBed +" H 5480 1301 50  0000 L CNN
-F 2 "SH_Connectors:KF7.62_2P" H 5400 1400 50  0001 C CNN
-F 3 "~" H 5400 1400 50  0001 C CNN
-	1    5400 1400
+P 5800 1400
+F 0 "J10" H 5880 1392 50  0000 L CNN
+F 1 "- HotBed +" H 5880 1301 50  0000 L CNN
+F 2 "SH_Connectors:KF7.62_2P" H 5800 1400 50  0001 C CNN
+F 3 "~" H 5800 1400 50  0001 C CNN
+	1    5800 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2340,8 +2340,6 @@ Text GLabel 9800 3000 0    50   Input ~ 0
 X_En
 Text GLabel 9800 3700 0    50   Input ~ 0
 Tmc_MISO
-Text GLabel 9800 3400 0    50   Input ~ 0
-KEYPAD_PIN
 Text GLabel 9800 2900 0    50   Input ~ 0
 X_CS
 Text GLabel 9800 3600 0    50   Input ~ 0
