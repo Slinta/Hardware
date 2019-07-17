@@ -1628,12 +1628,8 @@ Text GLabel 11900 5600 3    50   Input ~ 0
 Fan2
 Text GLabel 12000 5600 3    50   Input ~ 0
 Fan3
-Text GLabel 11000 5600 3    50   Input ~ 0
-MISO
 Text GLabel 11100 5600 3    50   Input ~ 0
 SDSS
-Text GLabel 11100 4900 1    50   Input ~ 0
-CLK
 Text GLabel 10900 4900 1    50   Input ~ 0
 SDDET
 Text GLabel 11200 4900 1    50   Input ~ 0
@@ -1770,8 +1766,6 @@ Text GLabel 6900 7250 0    50   Input ~ 0
 E0_Step
 Text GLabel 6900 7400 0    50   Input ~ 0
 E0_Dir
-Text GLabel 11000 4900 1    50   Input ~ 0
-MOSI
 NoConn ~ 11200 5600
 NoConn ~ 11300 5600
 NoConn ~ 11400 5600
@@ -1827,30 +1821,6 @@ F 3 "~" H 8800 5750 50  0001 C CNN
 	1    8800 5750
 	0    1    1    0   
 $EndComp
-Text GLabel 6900 1900 0    50   Input ~ 0
-Tmc_MISO
-Text GLabel 6900 3550 0    50   Input ~ 0
-Tmc_MISO
-Text GLabel 6900 5250 0    50   Input ~ 0
-Tmc_MISO
-Text GLabel 6900 6950 0    50   Input ~ 0
-Tmc_MISO
-Text GLabel 6900 1450 0    50   Input ~ 0
-Tmc_MOSI
-Text GLabel 6900 3100 0    50   Input ~ 0
-Tmc_MOSI
-Text GLabel 6900 4800 0    50   Input ~ 0
-Tmc_MOSI
-Text GLabel 6900 6500 0    50   Input ~ 0
-Tmc_MOSI
-Text GLabel 6900 1600 0    50   Input ~ 0
-Tmc_SCK
-Text GLabel 6900 3250 0    50   Input ~ 0
-Tmc_SCK
-Text GLabel 6900 4950 0    50   Input ~ 0
-Tmc_SCK
-Text GLabel 6900 6650 0    50   Input ~ 0
-Tmc_SCK
 Text GLabel 6900 1750 0    50   Input ~ 0
 X_CS
 Text GLabel 6900 3400 0    50   Input ~ 0
@@ -2298,10 +2268,6 @@ NoConn ~ 6900 5400
 NoConn ~ 6900 7100
 Text GLabel 10500 4150 2    50   Input ~ 0
 SS1
-Text GLabel 10500 4350 2    50   Input ~ 0
-MISO
-Text GLabel 9800 4350 0    50   Input ~ 0
-CLK
 Text GLabel 9800 4250 0    50   Input ~ 0
 SS2
 Text GLabel 10500 3300 2    50   Input ~ 0
@@ -2318,10 +2284,6 @@ Text GLabel 10500 3400 2    50   Input ~ 0
 HotBed
 Text GLabel 10500 3500 2    50   Input ~ 0
 Heater1
-Text GLabel 10500 3600 2    50   Input ~ 0
-Tmc_SCK
-Text GLabel 10500 3700 2    50   Input ~ 0
-Tmc_MOSI
 Text GLabel 10500 2800 2    50   Input ~ 0
 Y_CS
 Text GLabel 9800 3300 0    50   Input ~ 0
@@ -2332,17 +2294,13 @@ Text GLabel 9800 3100 0    50   Input ~ 0
 TB
 Text GLabel 9800 3500 0    50   Input ~ 0
 Heater0
-Text GLabel 9800 3800 0    50   Input ~ 0
-X_Dir
 Text GLabel 9800 2800 0    50   Input ~ 0
 X_Step
 Text GLabel 9800 3000 0    50   Input ~ 0
 X_En
-Text GLabel 9800 3700 0    50   Input ~ 0
-Tmc_MISO
 Text GLabel 9800 2900 0    50   Input ~ 0
 X_CS
-Text GLabel 9800 3600 0    50   Input ~ 0
+Text GLabel 10500 3700 2    50   Input ~ 0
 KEYPAD_PIN
 $Comp
 L STM32F407VET6:LeftAnalog U1
@@ -2385,4 +2343,68 @@ F 3 "" H 10150 2500 50  0001 C CNN
 	1    10150 2150
 	1    0    0    -1  
 $EndComp
+Text GLabel 9800 4350 0    50   Input ~ 0
+CLK
+Text GLabel 10500 4350 2    50   Input ~ 0
+MISO
+Text GLabel 11000 4900 1    50   Input ~ 0
+MOSI
+Text GLabel 11100 4900 1    50   Input ~ 0
+CLK
+Text GLabel 11000 5600 3    50   Input ~ 0
+MISO
+Text GLabel 6900 6500 0    50   Input ~ 0
+MOSI
+Text GLabel 6900 6950 0    50   Input ~ 0
+MISO
+Text GLabel 6900 6650 0    50   Input ~ 0
+CLK
+Text GLabel 6900 1900 0    50   Input ~ 0
+MISO
+Text GLabel 6900 1600 0    50   Input ~ 0
+CLK
+Text GLabel 6900 1450 0    50   Input ~ 0
+MOSI
+Text GLabel 6900 5250 0    50   Input ~ 0
+MISO
+Text GLabel 6900 4950 0    50   Input ~ 0
+CLK
+Text GLabel 6900 4800 0    50   Input ~ 0
+MOSI
+Text GLabel 6900 3550 0    50   Input ~ 0
+MISO
+Text GLabel 6900 3250 0    50   Input ~ 0
+CLK
+Text GLabel 6900 3100 0    50   Input ~ 0
+MOSI
+NoConn ~ 10500 4250
+NoConn ~ 9800 4150
+NoConn ~ 10500 3800
+$Comp
+L Connector_Generic:Conn_01x04 J18
+U 1 1 5D4B6054
+P 11500 3500
+F 0 "J18" H 11580 3492 50  0000 L CNN
+F 1 "EXTRAPINS" H 11580 3401 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 11500 3500 50  0001 C CNN
+F 3 "~" H 11500 3500 50  0001 C CNN
+	1    11500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 3600 11300 3600
+Text GLabel 9800 3600 0    50   Input ~ 0
+PA4
+Text GLabel 11300 3400 0    50   Input ~ 0
+PA4
+Text GLabel 9800 3700 0    50   Input ~ 0
+PA6
+Text GLabel 11300 3500 0    50   Input ~ 0
+PA6
+Text GLabel 9800 3400 0    50   Input ~ 0
+X_Dir
+Text GLabel 11300 3700 0    50   Input ~ 0
+PC4
+Text GLabel 9800 3800 0    50   Input ~ 0
+PC4
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=So 13. července 2019, 03:03:18 CEST
+update=17.7.2019 14:55:54
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
+LastNetListRead=STM32F407VET6.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -250,7 +250,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
+Clearance=0.2925
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
