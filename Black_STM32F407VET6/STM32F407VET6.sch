@@ -1706,17 +1706,13 @@ Text GLabel 13000 3850 2    50   Input ~ 0
 PWM2
 Text GLabel 12300 3750 0    50   Input ~ 0
 SDIO_DET
-Text GLabel 12300 2950 0    50   Input ~ 0
-E0_Step
-Text GLabel 12300 3150 0    50   Input ~ 0
-E0_Dir
 Text GLabel 13000 3250 2    50   Input ~ 0
 Z_Dir
-Text GLabel 12300 3050 0    50   Input ~ 0
+Text GLabel 12300 3150 0    50   Input ~ 0
 Z_Step
-Text GLabel 13000 2550 2    50   Input ~ 0
+Text GLabel 12300 2650 0    50   Input ~ 0
 E0_En
-Text GLabel 12300 2550 0    50   Input ~ 0
+Text GLabel 12300 2950 0    50   Input ~ 0
 Z_En
 NoConn ~ 13000 3050
 Connection ~ 4300 9450
@@ -1726,10 +1722,6 @@ Text GLabel 12300 3650 0    50   Input ~ 0
 RX
 Text GLabel 13000 3650 2    50   Input ~ 0
 TX
-Text GLabel 13000 2750 2    50   Input ~ 0
-SCL
-Text GLabel 12300 2750 0    50   Input ~ 0
-SDA
 Text GLabel 12300 3550 0    50   Input ~ 0
 USB_DM
 Text GLabel 13000 3550 2    50   Input ~ 0
@@ -1981,7 +1973,7 @@ Wire Wire Line
 	15400 2750 15100 2750
 Text GLabel 15600 2650 2    50   Input ~ 0
 USB_DP
-Text GLabel 12300 2650 0    50   Input ~ 0
+Text GLabel 12300 3050 0    50   Input ~ 0
 Z_CS
 Text GLabel 13000 2650 2    50   Input ~ 0
 E0_CS
@@ -1994,17 +1986,6 @@ F 1 "SDIO" H 15129 4051 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B9B-XH-A_1x09_P2.50mm_Vertical" H 15050 4100 50  0001 C CNN
 F 3 "~" H 15050 4100 50  0001 C CNN
 	1    15050 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L STM32F407VET6:Right J26
-U 1 1 5D30CC8F
-P 12650 3200
-F 0 "J26" H 12650 4615 50  0000 C CNN
-F 1 "Right" H 12650 4524 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x24_P2.54mm_Vertical" H 12650 2850 50  0001 C CNN
-F 3 "" H 12650 2850 50  0001 C CNN
-	1    12650 3200
 	1    0    0    -1  
 $EndComp
 Text GLabel 12300 2350 0    50   Input ~ 0
@@ -2456,4 +2437,23 @@ Text GLabel 13000 2950 2    50   Input ~ 0
 PD6
 Text GLabel 11300 3400 0    50   Input ~ 0
 PD6
+$Comp
+L STM32F407VET6:Right J26
+U 1 1 5D30CC8F
+P 12650 3200
+F 0 "J26" H 12650 4615 50  0000 C CNN
+F 1 "Right" H 12650 4524 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x24_P2.54mm_Vertical" H 12650 2850 50  0001 C CNN
+F 3 "" H 12650 2850 50  0001 C CNN
+	1    12650 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 12300 2750 0    50   Input ~ 0
+SDA
+Text GLabel 12300 2550 0    50   Input ~ 0
+E0_Dir
+Text GLabel 13000 2550 2    50   Input ~ 0
+E0_Step
+Text GLabel 13000 2750 2    50   Input ~ 0
+SCL
 $EndSCHEMATC
