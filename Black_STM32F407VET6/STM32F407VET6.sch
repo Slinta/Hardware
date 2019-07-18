@@ -270,12 +270,12 @@ GND
 $Comp
 L Connector_Generic:Conn_01x03 J56
 U 1 1 5C700CF8
-P 14850 7950
-F 0 "J56" H 15000 8000 50  0000 C CNN
-F 1 "Power" H 15050 7900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 14850 7950 50  0001 C CNN
-F 3 "~" H 14850 7950 50  0001 C CNN
-	1    14850 7950
+P 14000 8750
+F 0 "J56" H 14150 8800 50  0000 C CNN
+F 1 "Power" H 14200 8700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 14000 8750 50  0001 C CNN
+F 3 "~" H 14000 8750 50  0001 C CNN
+	1    14000 8750
 	-1   0    0    -1  
 $EndComp
 Text GLabel 1100 5200 0    50   Input ~ 0
@@ -695,23 +695,23 @@ Text GLabel 13600 800  3    50   Input ~ 0
 $Comp
 L power:+5V #PWR0105
 U 1 1 5D491BB6
-P 15500 7750
-F 0 "#PWR0105" H 15500 7600 50  0001 C CNN
-F 1 "+5V" H 15515 7923 50  0000 C CNN
-F 2 "" H 15500 7750 50  0001 C CNN
-F 3 "" H 15500 7750 50  0001 C CNN
-	1    15500 7750
+P 14650 8550
+F 0 "#PWR0105" H 14650 8400 50  0001 C CNN
+F 1 "+5V" H 14665 8723 50  0000 C CNN
+F 2 "" H 14650 8550 50  0001 C CNN
+F 3 "" H 14650 8550 50  0001 C CNN
+	1    14650 8550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+12V #PWR0106
 U 1 1 5D487131
-P 15200 7750
-F 0 "#PWR0106" H 15215 8015 50  0001 C CNN
-F 1 "+12V" H 15215 7923 50  0000 C CNN
-F 2 "" H 15200 7750 50  0001 C CNN
-F 3 "" H 15200 7750 50  0001 C CNN
-	1    15200 7750
+P 14350 8550
+F 0 "#PWR0106" H 14365 8815 50  0001 C CNN
+F 1 "+12V" H 14365 8723 50  0000 C CNN
+F 2 "" H 14350 8550 50  0001 C CNN
+F 3 "" H 14350 8550 50  0001 C CNN
+	1    14350 8550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -746,18 +746,18 @@ Wire Wire Line
 	1800 5550 1800 5450
 Connection ~ 1800 5450
 Wire Wire Line
-	15050 7850 15200 7850
+	14200 8650 14350 8650
 Wire Wire Line
-	15200 7850 15200 7750
+	14350 8650 14350 8550
 $Comp
 L power:GND #PWR0109
 U 1 1 5D265062
-P 15200 8150
-F 0 "#PWR0109" H 15200 7900 50  0001 C CNN
-F 1 "GND" H 15205 7977 50  0000 C CNN
-F 2 "" H 15200 8150 50  0001 C CNN
-F 3 "" H 15200 8150 50  0001 C CNN
-	1    15200 8150
+P 14350 8950
+F 0 "#PWR0109" H 14350 8700 50  0001 C CNN
+F 1 "GND" H 14355 8777 50  0000 C CNN
+F 2 "" H 14350 8950 50  0001 C CNN
+F 3 "" H 14350 8950 50  0001 C CNN
+	1    14350 8950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1115,13 +1115,13 @@ F 3 "~" H 2700 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15050 7950 15200 7950
+	14200 8750 14350 8750
 Wire Wire Line
-	15200 7950 15200 8150
+	14350 8750 14350 8950
 Wire Wire Line
-	15050 8050 15500 8050
+	14200 8850 14650 8850
 Wire Wire Line
-	15500 8050 15500 7750
+	14650 8850 14650 8550
 $Comp
 L Connector:Screw_Terminal_01x02 J5
 U 1 1 5C4B4AC4
@@ -1285,12 +1285,12 @@ HotBed
 $Comp
 L Connector_Generic:Conn_01x02 J10
 U 1 1 5D53C77B
-P 5800 1400
-F 0 "J10" H 5880 1392 50  0000 L CNN
-F 1 "- HotBed +" H 5880 1301 50  0000 L CNN
-F 2 "SH_Connectors:KF7.62_2P" H 5800 1400 50  0001 C CNN
-F 3 "~" H 5800 1400 50  0001 C CNN
-	1    5800 1400
+P 5400 1400
+F 0 "J10" H 5480 1392 50  0000 L CNN
+F 1 "- HotBed +" H 5480 1301 50  0000 L CNN
+F 2 "SH_Connectors:KF7.62_2P" H 5400 1400 50  0001 C CNN
+F 3 "~" H 5400 1400 50  0001 C CNN
+	1    5400 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1746,8 +1746,6 @@ Text GLabel 12300 3350 0    50   Input ~ 0
 SDIO_SCK
 Text GLabel 13000 3150 2    50   Input ~ 0
 SDIO_CMD
-Text GLabel 13000 2950 2    50   Input ~ 0
-Y_En
 Text GLabel 11600 5600 3    50   Input ~ 0
 X-
 Text GLabel 12300 4150 0    50   Input ~ 0
@@ -2276,9 +2274,9 @@ Text GLabel 10500 3200 2    50   Input ~ 0
 T1
 Text GLabel 10500 3100 2    50   Input ~ 0
 TC
-Text GLabel 10500 3000 2    50   Input ~ 0
-Y_Dir
 Text GLabel 10500 2900 2    50   Input ~ 0
+Y_Dir
+Text GLabel 9800 2900 0    50   Input ~ 0
 Y_Step
 Text GLabel 10500 3400 2    50   Input ~ 0
 HotBed
@@ -2294,11 +2292,11 @@ Text GLabel 9800 3100 0    50   Input ~ 0
 TB
 Text GLabel 9800 3500 0    50   Input ~ 0
 Heater0
-Text GLabel 9800 2800 0    50   Input ~ 0
+Text GLabel 9800 3400 0    50   Input ~ 0
 X_Step
 Text GLabel 9800 3000 0    50   Input ~ 0
 X_En
-Text GLabel 9800 2900 0    50   Input ~ 0
+Text GLabel 10500 3000 2    50   Input ~ 0
 X_CS
 Text GLabel 10500 3700 2    50   Input ~ 0
 KEYPAD_PIN
@@ -2393,18 +2391,69 @@ F 3 "~" H 11500 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10500 3600 11300 3600
-Text GLabel 9800 3600 0    50   Input ~ 0
-PA4
-Text GLabel 11300 3400 0    50   Input ~ 0
-PA4
 Text GLabel 9800 3700 0    50   Input ~ 0
 PA6
 Text GLabel 11300 3500 0    50   Input ~ 0
 PA6
-Text GLabel 9800 3400 0    50   Input ~ 0
+Text GLabel 9800 3600 0    50   Input ~ 0
 X_Dir
 Text GLabel 11300 3700 0    50   Input ~ 0
 PC4
 Text GLabel 9800 3800 0    50   Input ~ 0
 PC4
+$Comp
+L STM32F407VET6:BuckConvertor U3
+U 1 1 5D338CA3
+P 8950 9250
+F 0 "U3" H 8950 9575 50  0000 C CNN
+F 1 "BuckConvertor" H 8950 9484 50  0000 C CNN
+F 2 "Motor_driver:MP2307Buck" H 8950 9550 50  0001 C CNN
+F 3 "" H 8950 9550 50  0001 C CNN
+	1    8950 9250
+	1    0    0    -1  
+$EndComp
+Text GLabel 8500 9150 0    50   Input ~ 0
+12V
+Text GLabel 8500 9350 0    50   Input ~ 0
+GND
+Text GLabel 9400 9150 2    50   Input ~ 0
+5V
+Text GLabel 9400 9350 2    50   Input ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_01x03 J19
+U 1 1 5D39F163
+P 8650 9750
+F 0 "J19" H 8730 9792 50  0000 L CNN
+F 1 "12Vinput" H 8730 9701 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8650 9750 50  0001 C CNN
+F 3 "~" H 8650 9750 50  0001 C CNN
+	1    8650 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J20
+U 1 1 5D3A136D
+P 9450 9800
+F 0 "J20" H 9368 9575 50  0000 C CNN
+F 1 "5VOut" H 9368 9666 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 9368 9667 50  0001 C CNN
+F 3 "~" H 9450 9800 50  0001 C CNN
+	1    9450 9800
+	-1   0    0    1   
+$EndComp
+Text GLabel 8450 9750 0    50   Input ~ 0
+12V
+Text GLabel 8450 9650 0    50   Input ~ 0
+GND
+Text GLabel 8450 9850 0    50   Input ~ 0
+GND
+Text GLabel 9650 9800 2    50   Input ~ 0
+5V
+Text GLabel 9800 2800 0    50   Input ~ 0
+Y_En
+Text GLabel 13000 2950 2    50   Input ~ 0
+PD6
+Text GLabel 11300 3400 0    50   Input ~ 0
+PD6
 $EndSCHEMATC

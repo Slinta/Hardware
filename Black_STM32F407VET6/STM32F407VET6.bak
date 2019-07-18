@@ -1285,12 +1285,12 @@ HotBed
 $Comp
 L Connector_Generic:Conn_01x02 J10
 U 1 1 5D53C77B
-P 5800 1400
-F 0 "J10" H 5880 1392 50  0000 L CNN
-F 1 "- HotBed +" H 5880 1301 50  0000 L CNN
-F 2 "SH_Connectors:KF7.62_2P" H 5800 1400 50  0001 C CNN
-F 3 "~" H 5800 1400 50  0001 C CNN
-	1    5800 1400
+P 5400 1400
+F 0 "J10" H 5480 1392 50  0000 L CNN
+F 1 "- HotBed +" H 5480 1301 50  0000 L CNN
+F 2 "SH_Connectors:KF7.62_2P" H 5400 1400 50  0001 C CNN
+F 3 "~" H 5400 1400 50  0001 C CNN
+	1    5400 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2294,8 +2294,6 @@ Text GLabel 9800 3100 0    50   Input ~ 0
 TB
 Text GLabel 9800 3500 0    50   Input ~ 0
 Heater0
-Text GLabel 9800 3800 0    50   Input ~ 0
-X_Dir
 Text GLabel 9800 2800 0    50   Input ~ 0
 X_Step
 Text GLabel 9800 3000 0    50   Input ~ 0
@@ -2383,28 +2381,49 @@ NoConn ~ 10500 4250
 NoConn ~ 9800 4150
 NoConn ~ 10500 3800
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J18
 U 1 1 5D4B6054
 P 11500 3500
-F 0 "J?" H 11580 3492 50  0000 L CNN
+F 0 "J18" H 11580 3492 50  0000 L CNN
 F 1 "EXTRAPINS" H 11580 3401 50  0000 L CNN
-F 2 "" H 11500 3500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 11500 3500 50  0001 C CNN
 F 3 "~" H 11500 3500 50  0001 C CNN
 	1    11500 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	10500 3600 11300 3600
-Text GLabel 9800 3400 0    50   Input ~ 0
-PA0
-Text GLabel 11300 3400 0    50   Input ~ 0
-PA0
 Text GLabel 9800 3600 0    50   Input ~ 0
 PA4
-Text GLabel 11300 3500 0    50   Input ~ 0
+Text GLabel 11300 3400 0    50   Input ~ 0
 PA4
 Text GLabel 9800 3700 0    50   Input ~ 0
 PA6
-Text GLabel 11300 3700 0    50   Input ~ 0
+Text GLabel 11300 3500 0    50   Input ~ 0
 PA6
+Text GLabel 9800 3400 0    50   Input ~ 0
+X_Dir
+Text GLabel 11300 3700 0    50   Input ~ 0
+PC4
+Text GLabel 9800 3800 0    50   Input ~ 0
+PC4
+$Comp
+L STM32F407VET6:BuckConvertor U3
+U 1 1 5D338CA3
+P 8950 9250
+F 0 "U3" H 8950 9575 50  0000 C CNN
+F 1 "BuckConvertor" H 8950 9484 50  0000 C CNN
+F 2 "Motor_driver:MP2307Buck" H 8950 9550 50  0001 C CNN
+F 3 "" H 8950 9550 50  0001 C CNN
+	1    8950 9250
+	1    0    0    -1  
+$EndComp
+Text GLabel 8500 9150 0    50   Input ~ 0
+12V
+Text GLabel 8500 9350 0    50   Input ~ 0
+GND
+Text GLabel 9400 9150 2    50   Input ~ 0
+5V
+Text GLabel 9400 9350 2    50   Input ~ 0
+GND
 $EndSCHEMATC
