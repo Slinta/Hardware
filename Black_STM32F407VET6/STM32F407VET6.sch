@@ -2259,9 +2259,9 @@ Text GLabel 10500 2900 2    50   Input ~ 0
 Y_Dir
 Text GLabel 9800 2900 0    50   Input ~ 0
 Y_Step
-Text GLabel 10500 3400 2    50   Input ~ 0
-HotBed
 Text GLabel 10500 3500 2    50   Input ~ 0
+HotBed
+Text GLabel 10500 3400 2    50   Input ~ 0
 Heater1
 Text GLabel 10500 2800 2    50   Input ~ 0
 Y_CS
