@@ -350,28 +350,6 @@ Text GLabel 8000 3850 2    50   Input ~ 0
 Text GLabel 8500 2200 2    50   Input ~ 0
 3V3
 $Comp
-L Device:CP_Small C8
-U 1 1 5C4B7C75
-P 8300 3000
-F 0 "C8" H 8100 2950 50  0000 L CNN
-F 1 "100uF" H 8400 3050 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x6.9" H 8300 3000 50  0001 C CNN
-F 3 "~" H 8300 3000 50  0001 C CNN
-	1    8300 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP_Small C7
-U 1 1 5C4B6EC9
-P 8300 1350
-F 0 "C7" H 8100 1300 50  0000 L CNN
-F 1 "100uF" H 8400 1400 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x6.9" H 8300 1350 50  0001 C CNN
-F 3 "~" H 8300 1350 50  0001 C CNN
-	1    8300 1350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x04 J39
 U 1 1 5C4AD1D5
 P 8550 3350
@@ -395,12 +373,6 @@ F 3 "~" H 8550 1700 50  0001 C CNN
 $EndComp
 Text GLabel 14700 1950 0    50   Input ~ 0
 MOSI
-Wire Wire Line
-	14700 1550 15150 1550
-Wire Wire Line
-	15150 1850 15150 1800
-Wire Wire Line
-	15150 1550 15150 1600
 Text GLabel 14100 5500 1    50   Input ~ 0
 GND
 Text GLabel 14300 5500 1    50   Input ~ 0
@@ -510,19 +482,6 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 15000 900 50 
 F 3 "~" H 15000 900 50  0001 C CNN
 	1    15000 900 
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14700 1850 15150 1850
-$Comp
-L Device:R_Small R22
-U 1 1 5C6C524A
-P 15150 1700
-F 0 "R22" H 15091 1654 50  0000 R CNN
-F 1 "4K7" H 15091 1745 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 15150 1700 50  0001 C CNN
-F 3 "~" H 15150 1700 50  0001 C CNN
-	1    15150 1700
-	-1   0    0    1   
 $EndComp
 Text GLabel 14700 1650 0    50   Input ~ 0
 SS1
@@ -1770,17 +1729,6 @@ Text GLabel 6900 6350 0    50   Input ~ 0
 E0_En
 Wire Wire Line
 	4300 9450 4550 9450
-$Comp
-L Device:CP_Small C9
-U 1 1 5D30CFC0
-P 8350 4700
-F 0 "C9" H 8150 4700 50  0000 L CNN
-F 1 "100uF" H 8450 4750 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x6.9" H 8350 4700 50  0001 C CNN
-F 3 "~" H 8350 4700 50  0001 C CNN
-	1    8350 4700
-	1    0    0    -1  
-$EndComp
 Text GLabel 8000 5550 2    50   Input ~ 0
 3V3
 Text GLabel 8000 5700 2    50   Input ~ 0
@@ -1877,17 +1825,6 @@ F 1 "E0" H 8830 6651 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 8750 6750 50  0001 C CNN
 F 3 "~" H 8750 6750 50  0001 C CNN
 	1    8750 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP_Small C10
-U 1 1 5C4B9316
-P 8350 6400
-F 0 "C10" H 8100 6400 50  0000 L CNN
-F 1 "100uF" H 8450 6450 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x6.9" H 8350 6400 50  0001 C CNN
-F 3 "~" H 8350 6400 50  0001 C CNN
-	1    8350 6400
 	1    0    0    -1  
 $EndComp
 Text GLabel 8000 7250 2    50   Input ~ 0
@@ -2043,18 +1980,6 @@ Wire Wire Line
 Wire Wire Line
 	8150 1300 8150 1150
 Wire Wire Line
-	8150 1150 8300 1150
-Wire Wire Line
-	8300 1250 8300 1150
-Connection ~ 8300 1150
-Wire Wire Line
-	8300 1150 8500 1150
-Wire Wire Line
-	8000 1450 8300 1450
-Connection ~ 8300 1450
-Wire Wire Line
-	8300 1450 8500 1450
-Wire Wire Line
 	8000 1600 8350 1600
 Wire Wire Line
 	8000 1750 8150 1750
@@ -2110,21 +2035,9 @@ Wire Wire Line
 Wire Wire Line
 	8300 3550 8350 3550
 Wire Wire Line
-	8000 3100 8300 3100
-Wire Wire Line
 	8000 2950 8150 2950
 Wire Wire Line
-	8150 2800 8300 2800
-Wire Wire Line
-	8300 2800 8300 2900
-Wire Wire Line
 	8150 2800 8150 2950
-Wire Wire Line
-	8300 2800 8500 2800
-Connection ~ 8300 2800
-Wire Wire Line
-	8300 3100 8500 3100
-Connection ~ 8300 3100
 $Comp
 L Motor_driver:Step_stick Z_motor1
 U 1 1 5D46D9E3
@@ -2177,21 +2090,9 @@ Connection ~ 8600 5250
 Wire Wire Line
 	8600 5250 9000 5250
 Wire Wire Line
-	8500 4800 8350 4800
-Connection ~ 8350 4800
-Wire Wire Line
-	8350 4800 8000 4800
-Wire Wire Line
 	8000 4650 8150 4650
 Wire Wire Line
 	8150 4650 8150 4500
-Wire Wire Line
-	8150 4500 8350 4500
-Wire Wire Line
-	8350 4600 8350 4500
-Connection ~ 8350 4500
-Wire Wire Line
-	8350 4500 8500 4500
 $Comp
 L Motor_driver:Step_stick EO_motor1
 U 1 1 5D5F4ECF
@@ -2224,21 +2125,9 @@ Wire Wire Line
 Wire Wire Line
 	8300 6950 8550 6950
 Wire Wire Line
-	8000 6500 8350 6500
-Wire Wire Line
 	8000 6350 8150 6350
 Wire Wire Line
 	8150 6350 8150 6200
-Connection ~ 8350 6500
-Wire Wire Line
-	8150 6200 8350 6200
-Wire Wire Line
-	8350 6300 8350 6200
-Wire Wire Line
-	8350 6500 8600 6500
-Connection ~ 8350 6200
-Wire Wire Line
-	8350 6200 8500 6200
 Wire Wire Line
 	13000 2250 13000 2350
 NoConn ~ 6900 2050
@@ -2249,7 +2138,7 @@ Text GLabel 10500 4150 2    50   Input ~ 0
 SS1
 Text GLabel 9800 4250 0    50   Input ~ 0
 SS2
-Text GLabel 10500 3300 2    50   Input ~ 0
+Text GLabel 10500 3300 2    50   Output ~ 0
 3V3
 Text GLabel 10500 3200 2    50   Input ~ 0
 T1
@@ -2259,13 +2148,13 @@ Text GLabel 10500 2900 2    50   Input ~ 0
 Y_Dir
 Text GLabel 9800 2900 0    50   Input ~ 0
 Y_Step
-Text GLabel 10500 3400 2    50   Input ~ 0
-HotBed
 Text GLabel 10500 3500 2    50   Input ~ 0
+HotBed
+Text GLabel 10500 3400 2    50   Input ~ 0
 Heater1
 Text GLabel 10500 2800 2    50   Input ~ 0
 Y_CS
-Text GLabel 9800 3300 0    50   Input ~ 0
+Text GLabel 9800 3300 0    50   Output ~ 0
 GND
 Text GLabel 9800 3200 0    50   Input ~ 0
 T0
@@ -2456,4 +2345,103 @@ Text GLabel 13000 2550 2    50   Input ~ 0
 E0_Step
 Text GLabel 13000 2750 2    50   Input ~ 0
 SCL
+Wire Wire Line
+	8000 6500 8350 6500
+Wire Wire Line
+	8150 6200 8350 6200
+Wire Wire Line
+	8000 4800 8300 4800
+Wire Wire Line
+	8150 4500 8300 4500
+Wire Wire Line
+	8150 2800 8300 2800
+Wire Wire Line
+	8000 3100 8300 3100
+Wire Wire Line
+	8150 1150 8300 1150
+Wire Wire Line
+	8000 1450 8300 1450
+$Comp
+L Device:CP C9
+U 1 1 5D356E9E
+P 12050 1050
+F 0 "C9" H 12168 1096 50  0000 L CNN
+F 1 "CP 470uF 50V" H 12168 1005 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 12088 900 50  0001 C CNN
+F 3 "~" H 12050 1050 50  0001 C CNN
+	1    12050 1050
+	1    0    0    -1  
+$EndComp
+Text GLabel 12050 900  1    50   Input ~ 0
+12V
+Text GLabel 12050 1200 3    50   Input ~ 0
+GND
+$Comp
+L Device:C C6
+U 1 1 5D35A280
+P 8300 2950
+F 0 "C6" H 8415 2996 50  0000 L CNN
+F 1 "C 100nF" H 8415 2905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 8338 2800 50  0001 C CNN
+F 3 "~" H 8300 2950 50  0001 C CNN
+	1    8300 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 8300 2800
+Wire Wire Line
+	8300 2800 8500 2800
+Connection ~ 8300 3100
+Wire Wire Line
+	8300 3100 8500 3100
+$Comp
+L Device:C C5
+U 1 1 5D35C1CB
+P 8300 1300
+F 0 "C5" H 8415 1346 50  0000 L CNN
+F 1 "C 100nF" H 8415 1255 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 8338 1150 50  0001 C CNN
+F 3 "~" H 8300 1300 50  0001 C CNN
+	1    8300 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 8300 1150
+Wire Wire Line
+	8300 1150 8500 1150
+Connection ~ 8300 1450
+Wire Wire Line
+	8300 1450 8500 1450
+$Comp
+L Device:C C7
+U 1 1 5D35CECB
+P 8300 4650
+F 0 "C7" H 8415 4696 50  0000 L CNN
+F 1 "C 100nF" H 8415 4605 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 8338 4500 50  0001 C CNN
+F 3 "~" H 8300 4650 50  0001 C CNN
+	1    8300 4650
+	1    0    0    -1  
+$EndComp
+Connection ~ 8300 4500
+Wire Wire Line
+	8300 4500 8500 4500
+Connection ~ 8300 4800
+Wire Wire Line
+	8300 4800 8500 4800
+$Comp
+L Device:C C8
+U 1 1 5D35D96B
+P 8350 6350
+F 0 "C8" H 8465 6396 50  0000 L CNN
+F 1 "C 100nF" H 8465 6305 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 8388 6200 50  0001 C CNN
+F 3 "~" H 8350 6350 50  0001 C CNN
+	1    8350 6350
+	1    0    0    -1  
+$EndComp
+Connection ~ 8350 6200
+Wire Wire Line
+	8350 6200 8500 6200
+Connection ~ 8350 6500
+Wire Wire Line
+	8350 6500 8600 6500
 $EndSCHEMATC
