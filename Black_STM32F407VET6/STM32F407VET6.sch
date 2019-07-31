@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:STM32F407VET6-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -278,30 +278,6 @@ F 3 "~" H 14000 8750 50  0001 C CNN
 	1    14000 8750
 	-1   0    0    -1  
 $EndComp
-Text GLabel 1100 5200 0    50   Input ~ 0
-Fan1
-$Comp
-L Device:R_Small R13
-U 1 1 5D26924C
-P 1350 5200
-F 0 "R13" V 1250 5300 50  0000 R CNN
-F 1 "100K" V 1450 5300 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1350 5200 50  0001 C CNN
-F 3 "~" H 1350 5200 50  0001 C CNN
-	1    1350 5200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L tran:BCX70 Q3
-U 1 1 5D27C45B
-P 1700 5200
-F 0 "Q3" H 1891 5246 50  0000 L CNN
-F 1 "BCX70" H 1891 5155 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 1900 5125 50  0001 L CIN
-F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwig1MnVtKbjAhUCKVAKHT2oDBAQFjAAegQIAhAC&url=https%3A%2F%2Fassets.nexperia.com%2Fdocuments%2Fdata-sheet%2FBCX70.pdf&usg=AOvVaw2LoUAJLh4gJRAJgwgFtEYT" H 1700 5200 50  0001 L CNN
-	1    1700 5200
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Q_NMOS_GSD Q4
 U 1 1 5C4D7A9F
@@ -313,26 +289,6 @@ F 3 "~" H 2150 4950 50  0001 C CNN
 	1    2150 4950
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R11
-U 1 1 5C56DA7F
-P 1800 4800
-F 0 "R11" H 1741 4754 50  0000 R CNN
-F 1 "10K" H 1741 4845 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 4800 50  0001 C CNN
-F 3 "~" H 1800 4800 50  0001 C CNN
-	1    1800 4800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1450 5200 1500 5200
-Wire Wire Line
-	1950 4950 1800 4950
-Wire Wire Line
-	1800 5000 1800 4950
-Wire Wire Line
-	1800 4950 1800 4900
-Connection ~ 1800 4950
 Text GLabel 8500 2800 2    50   Input ~ 0
 12V
 Text GLabel 8500 1150 2    50   Input ~ 0
@@ -674,36 +630,7 @@ F 3 "" H 14350 8550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 5400 1800 5450
-Wire Wire Line
-	1800 5450 2250 5450
-Wire Wire Line
 	2250 5150 2250 5450
-$Comp
-L power:+12V #PWR0107
-U 1 1 5D4F670F
-P 1800 4450
-F 0 "#PWR0107" H 1815 4715 50  0001 C CNN
-F 1 "+12V" H 1815 4623 50  0000 C CNN
-F 2 "" H 1800 4450 50  0001 C CNN
-F 3 "" H 1800 4450 50  0001 C CNN
-	1    1800 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0108
-U 1 1 5D4FFC88
-P 1800 5550
-F 0 "#PWR0108" H 1800 5300 50  0001 C CNN
-F 1 "GND" H 1805 5377 50  0000 C CNN
-F 2 "" H 1800 5550 50  0001 C CNN
-F 3 "" H 1800 5550 50  0001 C CNN
-	1    1800 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1800 5550 1800 5450
-Connection ~ 1800 5450
 Wire Wire Line
 	14200 8650 14350 8650
 Wire Wire Line
@@ -723,39 +650,8 @@ Wire Wire Line
 	2250 4650 2250 4750
 Wire Wire Line
 	2250 4650 2500 4650
-Wire Wire Line
-	1800 4550 1800 4700
-Wire Wire Line
-	1800 4550 1800 4450
-Connection ~ 1800 4550
-Wire Wire Line
-	1800 4550 2500 4550
-Wire Wire Line
-	1100 5200 1250 5200
-Text GLabel 1100 3600 0    50   Input ~ 0
+Text GLabel 800  3250 0    50   Input ~ 0
 Fan2
-$Comp
-L Device:R_Small R12
-U 1 1 5D332B4A
-P 1350 3600
-F 0 "R12" V 1250 3700 50  0000 R CNN
-F 1 "100K" V 1450 3700 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1350 3600 50  0001 C CNN
-F 3 "~" H 1350 3600 50  0001 C CNN
-	1    1350 3600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L tran:BCX70 Q2
-U 1 1 5D332B50
-P 1700 3600
-F 0 "Q2" H 1891 3646 50  0000 L CNN
-F 1 "BCX70" H 1891 3555 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 1900 3525 50  0001 L CIN
-F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwig1MnVtKbjAhUCKVAKHT2oDBAQFjAAegQIAhAC&url=https%3A%2F%2Fassets.nexperia.com%2Fdocuments%2Fdata-sheet%2FBCX70.pdf&usg=AOvVaw2LoUAJLh4gJRAJgwgFtEYT" H 1700 3600 50  0001 L CNN
-	1    1700 3600
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Q_NMOS_GSD Q7
 U 1 1 5D332B56
@@ -768,26 +664,6 @@ F 3 "~" H 2150 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R16
-U 1 1 5D332B5C
-P 1800 3200
-F 0 "R16" H 1741 3154 50  0000 R CNN
-F 1 "10K" H 1741 3245 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 3200 50  0001 C CNN
-F 3 "~" H 1800 3200 50  0001 C CNN
-	1    1800 3200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1450 3600 1500 3600
-Wire Wire Line
-	1950 3350 1800 3350
-Wire Wire Line
-	1800 3400 1800 3350
-Wire Wire Line
-	1800 3350 1800 3300
-Connection ~ 1800 3350
-$Comp
 L Connector_Generic:Conn_01x02 J7
 U 1 1 5D332B67
 P 2700 2950
@@ -799,73 +675,11 @@ F 3 "~" H 2700 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 3800 1800 3850
-Wire Wire Line
-	1800 3850 2250 3850
-Wire Wire Line
-	2250 3550 2250 3850
-$Comp
-L power:+12V #PWR0110
-U 1 1 5D332B70
-P 1800 2850
-F 0 "#PWR0110" H 1815 3115 50  0001 C CNN
-F 1 "+12V" H 1815 3023 50  0000 C CNN
-F 2 "" H 1800 2850 50  0001 C CNN
-F 3 "" H 1800 2850 50  0001 C CNN
-	1    1800 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0111
-U 1 1 5D332B76
-P 1800 3950
-F 0 "#PWR0111" H 1800 3700 50  0001 C CNN
-F 1 "GND" H 1805 3777 50  0000 C CNN
-F 2 "" H 1800 3950 50  0001 C CNN
-F 3 "" H 1800 3950 50  0001 C CNN
-	1    1800 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1800 3950 1800 3850
-Connection ~ 1800 3850
-Wire Wire Line
 	2250 3050 2250 3150
 Wire Wire Line
 	2250 3050 2500 3050
-Wire Wire Line
-	1800 2950 1800 3100
-Wire Wire Line
-	1800 2950 1800 2850
-Connection ~ 1800 2950
-Wire Wire Line
-	1800 2950 2500 2950
-Wire Wire Line
-	1100 3600 1250 3600
-Text GLabel 1100 2000 0    50   Input ~ 0
+Text GLabel 800  1650 0    50   Input ~ 0
 Fan3
-$Comp
-L Device:R_Small R10
-U 1 1 5D342742
-P 1350 2000
-F 0 "R10" V 1250 2100 50  0000 R CNN
-F 1 "100K" V 1450 2100 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1350 2000 50  0001 C CNN
-F 3 "~" H 1350 2000 50  0001 C CNN
-	1    1350 2000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L tran:BCX70 Q1
-U 1 1 5D342748
-P 1700 2000
-F 0 "Q1" H 1891 2046 50  0000 L CNN
-F 1 "BCX70" H 1891 1955 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 1900 1925 50  0001 L CIN
-F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwig1MnVtKbjAhUCKVAKHT2oDBAQFjAAegQIAhAC&url=https%3A%2F%2Fassets.nexperia.com%2Fdocuments%2Fdata-sheet%2FBCX70.pdf&usg=AOvVaw2LoUAJLh4gJRAJgwgFtEYT" H 1700 2000 50  0001 L CNN
-	1    1700 2000
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Q_NMOS_GSD Q6
 U 1 1 5D34274E
@@ -878,26 +692,6 @@ F 3 "~" H 2150 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R15
-U 1 1 5D342754
-P 1800 1600
-F 0 "R15" H 1741 1554 50  0000 R CNN
-F 1 "10K" H 1741 1645 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 1600 50  0001 C CNN
-F 3 "~" H 1800 1600 50  0001 C CNN
-	1    1800 1600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1450 2000 1500 2000
-Wire Wire Line
-	1950 1750 1800 1750
-Wire Wire Line
-	1800 1800 1800 1750
-Wire Wire Line
-	1800 1750 1800 1700
-Connection ~ 1800 1750
-$Comp
 L Connector_Generic:Conn_01x02 J6
 U 1 1 5D34275F
 P 2700 1350
@@ -908,74 +702,21 @@ F 3 "~" H 2700 1350 50  0001 C CNN
 	1    2700 1350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1800 2200 1800 2250
-Wire Wire Line
-	1800 2250 2250 2250
-Wire Wire Line
-	2250 1950 2250 2250
-$Comp
-L power:+12V #PWR0112
-U 1 1 5D342768
-P 1800 1250
-F 0 "#PWR0112" H 1815 1515 50  0001 C CNN
-F 1 "+12V" H 1815 1423 50  0000 C CNN
-F 2 "" H 1800 1250 50  0001 C CNN
-F 3 "" H 1800 1250 50  0001 C CNN
-	1    1800 1250
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0113
 U 1 1 5D34276E
-P 1800 2350
-F 0 "#PWR0113" H 1800 2100 50  0001 C CNN
-F 1 "GND" H 1805 2177 50  0000 C CNN
-F 2 "" H 1800 2350 50  0001 C CNN
-F 3 "" H 1800 2350 50  0001 C CNN
-	1    1800 2350
+P 2250 2150
+F 0 "#PWR0113" H 2250 1900 50  0001 C CNN
+F 1 "GND" H 2255 1977 50  0000 C CNN
+F 2 "" H 2250 2150 50  0001 C CNN
+F 3 "" H 2250 2150 50  0001 C CNN
+	1    2250 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1800 2350 1800 2250
-Connection ~ 1800 2250
 Wire Wire Line
 	2250 1450 2250 1550
 Wire Wire Line
 	2250 1450 2500 1450
-Wire Wire Line
-	1800 1350 1800 1500
-Wire Wire Line
-	1800 1350 1800 1250
-Connection ~ 1800 1350
-Wire Wire Line
-	1800 1350 2500 1350
-Wire Wire Line
-	1100 2000 1250 2000
-Text GLabel 1100 6800 0    50   Input ~ 0
-Fan0
-$Comp
-L Device:R_Small R14
-U 1 1 5D38DD95
-P 1350 6800
-F 0 "R14" V 1250 6900 50  0000 R CNN
-F 1 "100K" V 1450 6900 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1350 6800 50  0001 C CNN
-F 3 "~" H 1350 6800 50  0001 C CNN
-	1    1350 6800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L tran:BCX70 Q5
-U 1 1 5D38DD9B
-P 1700 6800
-F 0 "Q5" H 1891 6846 50  0000 L CNN
-F 1 "BCX70" H 1891 6755 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 1900 6725 50  0001 L CIN
-F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwig1MnVtKbjAhUCKVAKHT2oDBAQFjAAegQIAhAC&url=https%3A%2F%2Fassets.nexperia.com%2Fdocuments%2Fdata-sheet%2FBCX70.pdf&usg=AOvVaw2LoUAJLh4gJRAJgwgFtEYT" H 1700 6800 50  0001 L CNN
-	1    1700 6800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Q_NMOS_GSD Q8
 U 1 1 5D38DDA1
@@ -988,26 +729,6 @@ F 3 "~" H 2150 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R17
-U 1 1 5D38DDA7
-P 1800 6400
-F 0 "R17" H 1741 6354 50  0000 R CNN
-F 1 "10K" H 1741 6445 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 6400 50  0001 C CNN
-F 3 "~" H 1800 6400 50  0001 C CNN
-	1    1800 6400
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1450 6800 1500 6800
-Wire Wire Line
-	1950 6550 1800 6550
-Wire Wire Line
-	1800 6600 1800 6550
-Wire Wire Line
-	1800 6550 1800 6500
-Connection ~ 1800 6550
-$Comp
 L Connector_Generic:Conn_01x02 J9
 U 1 1 5D38DDB2
 P 2700 6150
@@ -1019,49 +740,11 @@ F 3 "~" H 2700 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 7000 1800 7050
-Wire Wire Line
-	1800 7050 2250 7050
-Wire Wire Line
 	2250 6750 2250 7050
-$Comp
-L power:+12V #PWR0114
-U 1 1 5D38DDBB
-P 1800 6050
-F 0 "#PWR0114" H 1815 6315 50  0001 C CNN
-F 1 "+12V" H 1815 6223 50  0000 C CNN
-F 2 "" H 1800 6050 50  0001 C CNN
-F 3 "" H 1800 6050 50  0001 C CNN
-	1    1800 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0115
-U 1 1 5D38DDC1
-P 1800 7150
-F 0 "#PWR0115" H 1800 6900 50  0001 C CNN
-F 1 "GND" H 1805 6977 50  0000 C CNN
-F 2 "" H 1800 7150 50  0001 C CNN
-F 3 "" H 1800 7150 50  0001 C CNN
-	1    1800 7150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1800 7150 1800 7050
-Connection ~ 1800 7050
 Wire Wire Line
 	2250 6250 2250 6350
 Wire Wire Line
 	2250 6250 2500 6250
-Wire Wire Line
-	1800 6150 1800 6300
-Wire Wire Line
-	1800 6150 1800 6050
-Connection ~ 1800 6150
-Wire Wire Line
-	1800 6150 2500 6150
-Wire Wire Line
-	1100 6800 1250 6800
 $Comp
 L Connector_Generic:Conn_01x02 J8
 U 1 1 5D39CC30
@@ -1153,94 +836,12 @@ Text GLabel 10850 6950 0    50   Input ~ 0
 Abort
 Text GLabel 10850 7150 0    50   Input ~ 0
 MOSI
-$Comp
-L Device:R_Small R23
-U 1 1 5D53C75E
-P 4050 2050
-F 0 "R23" V 3950 2150 50  0000 R CNN
-F 1 "100K" V 4150 2150 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4050 2050 50  0001 C CNN
-F 3 "~" H 4050 2050 50  0001 C CNN
-	1    4050 2050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L tran:BCX70 Q9
-U 1 1 5D53C764
-P 4400 2050
-F 0 "Q9" H 4591 2096 50  0000 L CNN
-F 1 "BCX70" H 4591 2005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 1975 50  0001 L CIN
-F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwig1MnVtKbjAhUCKVAKHT2oDBAQFjAAegQIAhAC&url=https%3A%2F%2Fassets.nexperia.com%2Fdocuments%2Fdata-sheet%2FBCX70.pdf&usg=AOvVaw2LoUAJLh4gJRAJgwgFtEYT" H 4400 2050 50  0001 L CNN
-	1    4400 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R26
-U 1 1 5D53C770
-P 4500 1650
-F 0 "R26" H 4441 1604 50  0000 R CNN
-F 1 "10K" H 4441 1695 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4500 1650 50  0001 C CNN
-F 3 "~" H 4500 1650 50  0001 C CNN
-	1    4500 1650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4150 2050 4200 2050
-Wire Wire Line
-	4650 1800 4500 1800
-Wire Wire Line
-	4500 1850 4500 1800
-Wire Wire Line
-	4500 1800 4500 1750
-Connection ~ 4500 1800
-Wire Wire Line
-	4500 2250 4500 2300
-Wire Wire Line
-	4500 2300 4950 2300
 Wire Wire Line
 	4950 2000 4950 2300
-$Comp
-L power:+12V #PWR0119
-U 1 1 5D53C784
-P 4500 1300
-F 0 "#PWR0119" H 4515 1565 50  0001 C CNN
-F 1 "+12V" H 4515 1473 50  0000 C CNN
-F 2 "" H 4500 1300 50  0001 C CNN
-F 3 "" H 4500 1300 50  0001 C CNN
-	1    4500 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0120
-U 1 1 5D53C78A
-P 4500 2400
-F 0 "#PWR0120" H 4500 2150 50  0001 C CNN
-F 1 "GND" H 4505 2227 50  0000 C CNN
-F 2 "" H 4500 2400 50  0001 C CNN
-F 3 "" H 4500 2400 50  0001 C CNN
-	1    4500 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 2400 4500 2300
-Connection ~ 4500 2300
 Wire Wire Line
 	4950 1500 4950 1600
 Wire Wire Line
 	4950 1500 5200 1500
-Wire Wire Line
-	4500 1400 4500 1550
-Wire Wire Line
-	4500 1400 4500 1300
-Connection ~ 4500 1400
-Wire Wire Line
-	4500 1400 5200 1400
-Wire Wire Line
-	3800 2050 3950 2050
-Text GLabel 3800 2050 0    50   Input ~ 0
-HotBed
 $Comp
 L Connector_Generic:Conn_01x02 J10
 U 1 1 5D53C77B
@@ -1252,93 +853,13 @@ F 3 "~" H 5400 1400 50  0001 C CNN
 	1    5400 1400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R24
-U 1 1 5D56042D
-P 4050 3700
-F 0 "R24" V 3950 3800 50  0000 R CNN
-F 1 "100K" V 4150 3800 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4050 3700 50  0001 C CNN
-F 3 "~" H 4050 3700 50  0001 C CNN
-	1    4050 3700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L tran:BCX70 Q10
-U 1 1 5D560433
-P 4400 3700
-F 0 "Q10" H 4591 3746 50  0000 L CNN
-F 1 "BCX70" H 4591 3655 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 3625 50  0001 L CIN
-F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwig1MnVtKbjAhUCKVAKHT2oDBAQFjAAegQIAhAC&url=https%3A%2F%2Fassets.nexperia.com%2Fdocuments%2Fdata-sheet%2FBCX70.pdf&usg=AOvVaw2LoUAJLh4gJRAJgwgFtEYT" H 4400 3700 50  0001 L CNN
-	1    4400 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R27
-U 1 1 5D56043F
-P 4500 3300
-F 0 "R27" H 4441 3254 50  0000 R CNN
-F 1 "10K" H 4441 3345 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4500 3300 50  0001 C CNN
-F 3 "~" H 4500 3300 50  0001 C CNN
-	1    4500 3300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4150 3700 4200 3700
-Wire Wire Line
-	4650 3450 4500 3450
-Wire Wire Line
-	4500 3500 4500 3450
-Wire Wire Line
-	4500 3450 4500 3400
-Connection ~ 4500 3450
-Wire Wire Line
-	4500 3900 4500 3950
-Wire Wire Line
-	4500 3950 4950 3950
 Wire Wire Line
 	4950 3650 4950 3950
-$Comp
-L power:+12V #PWR0121
-U 1 1 5D560453
-P 4500 2950
-F 0 "#PWR0121" H 4515 3215 50  0001 C CNN
-F 1 "+12V" H 4515 3123 50  0000 C CNN
-F 2 "" H 4500 2950 50  0001 C CNN
-F 3 "" H 4500 2950 50  0001 C CNN
-	1    4500 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0122
-U 1 1 5D560459
-P 4500 4050
-F 0 "#PWR0122" H 4500 3800 50  0001 C CNN
-F 1 "GND" H 4505 3877 50  0000 C CNN
-F 2 "" H 4500 4050 50  0001 C CNN
-F 3 "" H 4500 4050 50  0001 C CNN
-	1    4500 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 4050 4500 3950
-Connection ~ 4500 3950
 Wire Wire Line
 	4950 3150 4950 3250
 Wire Wire Line
 	4950 3150 5200 3150
-Wire Wire Line
-	4500 3050 4500 3200
-Wire Wire Line
-	4500 3050 4500 2950
-Connection ~ 4500 3050
-Wire Wire Line
-	4500 3050 5200 3050
-Wire Wire Line
-	3800 3700 3950 3700
-Text GLabel 3800 3700 0    50   Input ~ 0
+Text GLabel 3500 3350 0    50   Input ~ 0
 Heater0
 $Comp
 L Connector_Generic:Conn_01x02 J11
@@ -1351,50 +872,8 @@ F 3 "~" H 5400 3050 50  0001 C CNN
 	1    5400 3050
 	1    0    0    -1  
 $EndComp
-Text GLabel 3800 5300 0    50   Input ~ 0
+Text GLabel 3500 4950 0    50   Input ~ 0
 Heater1
-$Comp
-L Device:R_Small R25
-U 1 1 5D573798
-P 4050 5300
-F 0 "R25" V 3950 5400 50  0000 R CNN
-F 1 "100K" V 4150 5400 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4050 5300 50  0001 C CNN
-F 3 "~" H 4050 5300 50  0001 C CNN
-	1    4050 5300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L tran:BCX70 Q11
-U 1 1 5D57379E
-P 4400 5300
-F 0 "Q11" H 4591 5346 50  0000 L CNN
-F 1 "BCX70" H 4591 5255 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 5225 50  0001 L CIN
-F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwig1MnVtKbjAhUCKVAKHT2oDBAQFjAAegQIAhAC&url=https%3A%2F%2Fassets.nexperia.com%2Fdocuments%2Fdata-sheet%2FBCX70.pdf&usg=AOvVaw2LoUAJLh4gJRAJgwgFtEYT" H 4400 5300 50  0001 L CNN
-	1    4400 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R28
-U 1 1 5D5737AA
-P 4500 4900
-F 0 "R28" H 4441 4854 50  0000 R CNN
-F 1 "10K" H 4441 4945 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4500 4900 50  0001 C CNN
-F 3 "~" H 4500 4900 50  0001 C CNN
-	1    4500 4900
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4150 5300 4200 5300
-Wire Wire Line
-	4650 5050 4500 5050
-Wire Wire Line
-	4500 5100 4500 5050
-Wire Wire Line
-	4500 5050 4500 5000
-Connection ~ 4500 5050
 $Comp
 L Connector_Generic:Conn_01x02 J43
 U 1 1 5D5737B5
@@ -1407,49 +886,11 @@ F 3 "~" H 5400 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 5500 4500 5550
-Wire Wire Line
-	4500 5550 4950 5550
-Wire Wire Line
 	4950 5250 4950 5550
-$Comp
-L power:+12V #PWR0123
-U 1 1 5D5737BE
-P 4500 4550
-F 0 "#PWR0123" H 4515 4815 50  0001 C CNN
-F 1 "+12V" H 4515 4723 50  0000 C CNN
-F 2 "" H 4500 4550 50  0001 C CNN
-F 3 "" H 4500 4550 50  0001 C CNN
-	1    4500 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0124
-U 1 1 5D5737C4
-P 4500 5650
-F 0 "#PWR0124" H 4500 5400 50  0001 C CNN
-F 1 "GND" H 4505 5477 50  0000 C CNN
-F 2 "" H 4500 5650 50  0001 C CNN
-F 3 "" H 4500 5650 50  0001 C CNN
-	1    4500 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 5650 4500 5550
-Connection ~ 4500 5550
 Wire Wire Line
 	4950 4750 4950 4850
 Wire Wire Line
 	4950 4750 5200 4750
-Wire Wire Line
-	4500 4650 4500 4800
-Wire Wire Line
-	4500 4650 4500 4550
-Connection ~ 4500 4650
-Wire Wire Line
-	4500 4650 5200 4650
-Wire Wire Line
-	3800 5300 3950 5300
 $Comp
 L Device:Q_NMOS_GDS Q14
 U 1 1 5D5A03DD
@@ -2443,4 +1884,580 @@ Connection ~ 8350 6500
 Wire Wire Line
 	8350 6500 8600 6500
 NoConn ~ 9800 3300
+$Comp
+L Comparator:LM2901 U4
+U 5 1 5D443CD8
+P 4050 6250
+F 0 "U4" H 4008 6296 50  0000 L CNN
+F 1 "LM2901" H 4008 6205 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4000 6350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 4100 6450 50  0001 C CNN
+	5    4050 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM2901 U6
+U 5 1 5D448CDB
+P 4550 6250
+F 0 "U6" H 4508 6296 50  0000 L CNN
+F 1 "LM2901" H 4508 6205 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4500 6350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 4600 6450 50  0001 C CNN
+	5    4550 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2150 2250 1950
+Wire Wire Line
+	800  1650 1250 1650
+Connection ~ 1900 1350
+Wire Wire Line
+	1900 1450 1900 1350
+Wire Wire Line
+	1900 1650 1900 1750
+Wire Wire Line
+	1100 1250 1100 1350
+Wire Wire Line
+	1100 2250 1100 2150
+$Comp
+L power:GND #PWR02
+U 1 1 5D4FEE8E
+P 1100 2250
+F 0 "#PWR02" H 1100 2000 50  0001 C CNN
+F 1 "GND" H 1105 2077 50  0000 C CNN
+F 2 "" H 1100 2250 50  0001 C CNN
+F 3 "" H 1100 2250 50  0001 C CNN
+	1    1100 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1850 1100 1950
+Connection ~ 1100 1850
+Wire Wire Line
+	1250 1850 1100 1850
+Wire Wire Line
+	1100 1550 1100 1850
+$Comp
+L Device:R_Small R8
+U 1 1 5D4CF25E
+P 1100 2050
+F 0 "R8" H 1041 2004 50  0000 R CNN
+F 1 "10K" H 1041 2095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1100 2050 50  0001 C CNN
+F 3 "~" H 1100 2050 50  0001 C CNN
+	1    1100 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 5D4CE297
+P 1100 1450
+F 0 "R7" H 1041 1404 50  0000 R CNN
+F 1 "10K" H 1041 1495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1100 1450 50  0001 C CNN
+F 3 "~" H 1100 1450 50  0001 C CNN
+	1    1100 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR01
+U 1 1 5D4CCF8B
+P 1100 1250
+F 0 "#PWR01" H 1100 1100 50  0001 C CNN
+F 1 "+3V3" H 1115 1423 50  0000 C CNN
+F 2 "" H 1100 1250 50  0001 C CNN
+F 3 "" H 1100 1250 50  0001 C CNN
+	1    1100 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 1900 1750
+Wire Wire Line
+	1950 1750 1900 1750
+Wire Wire Line
+	1900 1750 1850 1750
+$Comp
+L Device:R_Small R9
+U 1 1 5D4617DA
+P 1900 1550
+F 0 "R9" H 1841 1504 50  0000 R CNN
+F 1 "15K" H 1841 1595 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1900 1550 50  0001 C CNN
+F 3 "~" H 1900 1550 50  0001 C CNN
+	1    1900 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Comparator:LM2901 U4
+U 1 1 5D430AF0
+P 1550 1750
+F 0 "U4" H 1550 2117 50  0000 C CNN
+F 1 "LM2901" H 1550 2026 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1500 1850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 1600 1950 50  0001 C CNN
+	1    1550 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1350 2500 1350
+Wire Wire Line
+	1900 1350 1900 1250
+$Comp
+L power:+12V #PWR0112
+U 1 1 5D342768
+P 1900 1250
+F 0 "#PWR0112" H 1915 1515 50  0001 C CNN
+F 1 "+12V" H 1915 1423 50  0000 C CNN
+F 2 "" H 1900 1250 50  0001 C CNN
+F 3 "" H 1900 1250 50  0001 C CNN
+	1    1900 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  3250 1250 3250
+Connection ~ 1900 2950
+Wire Wire Line
+	1900 3050 1900 2950
+Wire Wire Line
+	1900 3250 1900 3350
+Wire Wire Line
+	1250 3450 1100 3450
+Connection ~ 1900 3350
+Wire Wire Line
+	1950 3350 1900 3350
+Wire Wire Line
+	1900 3350 1850 3350
+$Comp
+L Device:R_Small R10
+U 1 1 5D55B29E
+P 1900 3150
+F 0 "R10" H 1841 3104 50  0000 R CNN
+F 1 "15K" H 1841 3195 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1900 3150 50  0001 C CNN
+F 3 "~" H 1900 3150 50  0001 C CNN
+	1    1900 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1900 2950 2500 2950
+Wire Wire Line
+	1900 2950 1900 2850
+$Comp
+L power:+12V #PWR03
+U 1 1 5D55B2AC
+P 1900 2850
+F 0 "#PWR03" H 1915 3115 50  0001 C CNN
+F 1 "+12V" H 1915 3023 50  0000 C CNN
+F 2 "" H 1900 2850 50  0001 C CNN
+F 3 "" H 1900 2850 50  0001 C CNN
+	1    1900 2850
+	1    0    0    -1  
+$EndComp
+Text GLabel 950  1850 0    50   Input ~ 0
+Vref
+Wire Wire Line
+	1100 1850 950  1850
+Text GLabel 1100 3450 0    50   Input ~ 0
+Vref
+$Comp
+L power:GND #PWR06
+U 1 1 5D57E19A
+P 2250 3700
+F 0 "#PWR06" H 2250 3450 50  0001 C CNN
+F 1 "GND" H 2255 3527 50  0000 C CNN
+F 2 "" H 2250 3700 50  0001 C CNN
+F 3 "" H 2250 3700 50  0001 C CNN
+	1    2250 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3700 2250 3550
+$Comp
+L Comparator:LM2901 U4
+U 2 1 5D5A321D
+P 1550 3350
+F 0 "U4" H 1550 3717 50  0000 C CNN
+F 1 "LM2901" H 1550 3626 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1500 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 1600 3550 50  0001 C CNN
+	2    1550 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  4850 1250 4850
+Connection ~ 1900 4550
+Wire Wire Line
+	1900 4650 1900 4550
+Wire Wire Line
+	1900 4850 1900 4950
+Wire Wire Line
+	1250 5050 1100 5050
+Connection ~ 1900 4950
+Wire Wire Line
+	1950 4950 1900 4950
+Wire Wire Line
+	1900 4950 1850 4950
+$Comp
+L Device:R_Small R11
+U 1 1 5D5C3FFB
+P 1900 4750
+F 0 "R11" H 1841 4704 50  0000 R CNN
+F 1 "15K" H 1841 4795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1900 4750 50  0001 C CNN
+F 3 "~" H 1900 4750 50  0001 C CNN
+	1    1900 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1900 4550 2500 4550
+Wire Wire Line
+	1900 4550 1900 4450
+$Comp
+L power:+12V #PWR04
+U 1 1 5D5C4003
+P 1900 4450
+F 0 "#PWR04" H 1915 4715 50  0001 C CNN
+F 1 "+12V" H 1915 4623 50  0000 C CNN
+F 2 "" H 1900 4450 50  0001 C CNN
+F 3 "" H 1900 4450 50  0001 C CNN
+	1    1900 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 1100 5050 0    50   Input ~ 0
+Vref
+$Comp
+L power:GND #PWR0108
+U 1 1 5D4FFC88
+P 2250 5450
+F 0 "#PWR0108" H 2250 5200 50  0001 C CNN
+F 1 "GND" H 2255 5277 50  0000 C CNN
+F 2 "" H 2250 5450 50  0001 C CNN
+F 3 "" H 2250 5450 50  0001 C CNN
+	1    2250 5450
+	1    0    0    -1  
+$EndComp
+Text GLabel 800  4850 0    50   Input ~ 0
+Fan1
+$Comp
+L Comparator:LM2901 U4
+U 3 1 5D5F2E8A
+P 1550 4950
+F 0 "U4" H 1550 5317 50  0000 C CNN
+F 1 "LM2901" H 1550 5226 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1500 5050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 1600 5150 50  0001 C CNN
+	3    1550 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  6450 1250 6450
+Connection ~ 1900 6150
+Wire Wire Line
+	1900 6250 1900 6150
+Wire Wire Line
+	1900 6450 1900 6550
+Wire Wire Line
+	1250 6650 1100 6650
+Connection ~ 1900 6550
+Wire Wire Line
+	1950 6550 1900 6550
+Wire Wire Line
+	1900 6550 1850 6550
+$Comp
+L Device:R_Small R12
+U 1 1 5D613EB6
+P 1900 6350
+F 0 "R12" H 1841 6304 50  0000 R CNN
+F 1 "15K" H 1841 6395 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1900 6350 50  0001 C CNN
+F 3 "~" H 1900 6350 50  0001 C CNN
+	1    1900 6350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1900 6150 2500 6150
+Wire Wire Line
+	1900 6150 1900 6050
+$Comp
+L power:+12V #PWR05
+U 1 1 5D613EBE
+P 1900 6050
+F 0 "#PWR05" H 1915 6315 50  0001 C CNN
+F 1 "+12V" H 1915 6223 50  0000 C CNN
+F 2 "" H 1900 6050 50  0001 C CNN
+F 3 "" H 1900 6050 50  0001 C CNN
+	1    1900 6050
+	1    0    0    -1  
+$EndComp
+Text GLabel 1100 6650 0    50   Input ~ 0
+Vref
+Text GLabel 800  6450 0    50   Input ~ 0
+Fan0
+$Comp
+L Comparator:LM2901 U4
+U 4 1 5D6399E9
+P 1550 6550
+F 0 "U4" H 1550 6917 50  0000 C CNN
+F 1 "LM2901" H 1550 6826 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1500 6650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 1600 6750 50  0001 C CNN
+	4    1550 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5D63BAA8
+P 2250 7050
+F 0 "#PWR07" H 2250 6800 50  0001 C CNN
+F 1 "GND" H 2255 6877 50  0000 C CNN
+F 2 "" H 2250 7050 50  0001 C CNN
+F 3 "" H 2250 7050 50  0001 C CNN
+	1    2250 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR08
+U 1 1 5D640870
+P 3950 5750
+F 0 "#PWR08" H 3965 6015 50  0001 C CNN
+F 1 "+12V" H 3965 5923 50  0000 C CNN
+F 2 "" H 3950 5750 50  0001 C CNN
+F 3 "" H 3950 5750 50  0001 C CNN
+	1    3950 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5D640E8A
+P 3950 6750
+F 0 "#PWR09" H 3950 6500 50  0001 C CNN
+F 1 "GND" H 3955 6577 50  0000 C CNN
+F 2 "" H 3950 6750 50  0001 C CNN
+F 3 "" H 3950 6750 50  0001 C CNN
+	1    3950 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 6750 3950 6550
+Wire Wire Line
+	3950 5950 3950 5750
+$Comp
+L power:+12V #PWR010
+U 1 1 5D67535F
+P 4450 5750
+F 0 "#PWR010" H 4465 6015 50  0001 C CNN
+F 1 "+12V" H 4465 5923 50  0000 C CNN
+F 2 "" H 4450 5750 50  0001 C CNN
+F 3 "" H 4450 5750 50  0001 C CNN
+	1    4450 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5D6756A1
+P 4450 6750
+F 0 "#PWR011" H 4450 6500 50  0001 C CNN
+F 1 "GND" H 4455 6577 50  0000 C CNN
+F 2 "" H 4450 6750 50  0001 C CNN
+F 3 "" H 4450 6750 50  0001 C CNN
+	1    4450 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6750 4450 6550
+Wire Wire Line
+	4450 5950 4450 5750
+Text GLabel 3500 1700 0    50   Input ~ 0
+HotBed
+Wire Wire Line
+	3500 1700 3950 1700
+Connection ~ 4600 1400
+Wire Wire Line
+	4600 1500 4600 1400
+Wire Wire Line
+	4600 1700 4600 1800
+Wire Wire Line
+	3950 1900 3800 1900
+Connection ~ 4600 1800
+Wire Wire Line
+	4650 1800 4600 1800
+Wire Wire Line
+	4600 1800 4550 1800
+$Comp
+L Device:R_Small R13
+U 1 1 5D6BA5D3
+P 4600 1600
+F 0 "R13" H 4541 1554 50  0000 R CNN
+F 1 "15K" H 4541 1645 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4600 1600 50  0001 C CNN
+F 3 "~" H 4600 1600 50  0001 C CNN
+	1    4600 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 1400 5200 1400
+Wire Wire Line
+	4600 1400 4600 1300
+$Comp
+L power:+12V #PWR012
+U 1 1 5D6BA5DB
+P 4600 1300
+F 0 "#PWR012" H 4615 1565 50  0001 C CNN
+F 1 "+12V" H 4615 1473 50  0000 C CNN
+F 2 "" H 4600 1300 50  0001 C CNN
+F 3 "" H 4600 1300 50  0001 C CNN
+	1    4600 1300
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 1900 0    50   Input ~ 0
+Vref
+$Comp
+L power:GND #PWR015
+U 1 1 5D6CD466
+P 4950 2300
+F 0 "#PWR015" H 4950 2050 50  0001 C CNN
+F 1 "GND" H 4955 2127 50  0000 C CNN
+F 2 "" H 4950 2300 50  0001 C CNN
+F 3 "" H 4950 2300 50  0001 C CNN
+	1    4950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM2901 U6
+U 1 1 5D6CE53C
+P 4250 1800
+F 0 "U6" H 4250 2167 50  0000 C CNN
+F 1 "LM2901" H 4250 2076 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4200 1900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 4300 2000 50  0001 C CNN
+	1    4250 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3350 3950 3350
+Connection ~ 4600 3050
+Wire Wire Line
+	4600 3150 4600 3050
+Wire Wire Line
+	4600 3350 4600 3450
+Wire Wire Line
+	3950 3550 3800 3550
+Connection ~ 4600 3450
+Wire Wire Line
+	4650 3450 4600 3450
+Wire Wire Line
+	4600 3450 4550 3450
+$Comp
+L Device:R_Small R14
+U 1 1 5D6F045E
+P 4600 3250
+F 0 "R14" H 4541 3204 50  0000 R CNN
+F 1 "15K" H 4541 3295 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4600 3250 50  0001 C CNN
+F 3 "~" H 4600 3250 50  0001 C CNN
+	1    4600 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 3050 5200 3050
+Wire Wire Line
+	4600 3050 4600 2950
+$Comp
+L power:+12V #PWR013
+U 1 1 5D6F0466
+P 4600 2950
+F 0 "#PWR013" H 4615 3215 50  0001 C CNN
+F 1 "+12V" H 4615 3123 50  0000 C CNN
+F 2 "" H 4600 2950 50  0001 C CNN
+F 3 "" H 4600 2950 50  0001 C CNN
+	1    4600 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 3550 0    50   Input ~ 0
+Vref
+$Comp
+L Comparator:LM2901 U6
+U 2 1 5D6F046D
+P 4250 3450
+F 0 "U6" H 4250 3817 50  0000 C CNN
+F 1 "LM2901" H 4250 3726 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4200 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 4300 3650 50  0001 C CNN
+	2    4250 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5D7009A9
+P 4950 3950
+F 0 "#PWR016" H 4950 3700 50  0001 C CNN
+F 1 "GND" H 4955 3777 50  0000 C CNN
+F 2 "" H 4950 3950 50  0001 C CNN
+F 3 "" H 4950 3950 50  0001 C CNN
+	1    4950 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4950 3950 4950
+Connection ~ 4600 4650
+Wire Wire Line
+	4600 4750 4600 4650
+Wire Wire Line
+	4600 4950 4600 5050
+Wire Wire Line
+	3950 5150 3800 5150
+Connection ~ 4600 5050
+Wire Wire Line
+	4650 5050 4600 5050
+Wire Wire Line
+	4600 5050 4550 5050
+$Comp
+L Device:R_Small R15
+U 1 1 5D7208E1
+P 4600 4850
+F 0 "R15" H 4541 4804 50  0000 R CNN
+F 1 "15K" H 4541 4895 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4600 4850 50  0001 C CNN
+F 3 "~" H 4600 4850 50  0001 C CNN
+	1    4600 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 4650 5200 4650
+Wire Wire Line
+	4600 4650 4600 4550
+$Comp
+L power:+12V #PWR014
+U 1 1 5D7208E9
+P 4600 4550
+F 0 "#PWR014" H 4615 4815 50  0001 C CNN
+F 1 "+12V" H 4615 4723 50  0000 C CNN
+F 2 "" H 4600 4550 50  0001 C CNN
+F 3 "" H 4600 4550 50  0001 C CNN
+	1    4600 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 5150 0    50   Input ~ 0
+Vref
+$Comp
+L Comparator:LM2901 U6
+U 3 1 5D7208F0
+P 4250 5050
+F 0 "U6" H 4250 5417 50  0000 C CNN
+F 1 "LM2901" H 4250 5326 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4200 5150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 4300 5250 50  0001 C CNN
+	3    4250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5D730D8E
+P 4950 5550
+F 0 "#PWR017" H 4950 5300 50  0001 C CNN
+F 1 "GND" H 4955 5377 50  0000 C CNN
+F 2 "" H 4950 5550 50  0001 C CNN
+F 3 "" H 4950 5550 50  0001 C CNN
+	1    4950 5550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

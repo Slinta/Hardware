@@ -2154,8 +2154,6 @@ Text GLabel 10500 3400 2    50   Input ~ 0
 Heater1
 Text GLabel 10500 2800 2    50   Input ~ 0
 Y_CS
-Text GLabel 9800 3300 0    50   Output ~ 0
-GND
 Text GLabel 9800 3200 0    50   Input ~ 0
 T0
 Text GLabel 9800 3100 0    50   Input ~ 0
@@ -2444,4 +2442,5 @@ Wire Wire Line
 Connection ~ 8350 6500
 Wire Wire Line
 	8350 6500 8600 6500
+NoConn ~ 9800 3300
 $EndSCHEMATC
