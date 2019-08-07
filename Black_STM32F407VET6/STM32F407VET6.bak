@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:STM32F407VET6-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -1020,13 +1020,13 @@ Text GLabel 9700 6750 1    50   Input ~ 0
 LCDE
 Text GLabel 10700 4900 1    50   Input ~ 0
 3V3
-Text GLabel 11700 5600 3    50   Input ~ 0
-Fan0
-Text GLabel 11800 5600 3    50   Input ~ 0
-Fan1
 Text GLabel 11900 5600 3    50   Input ~ 0
-Fan2
+Fan0
 Text GLabel 12000 5600 3    50   Input ~ 0
+Fan1
+Text GLabel 11800 5600 3    50   Input ~ 0
+Fan2
+Text GLabel 11700 5600 3    50   Input ~ 0
 Fan3
 Text GLabel 11100 5600 3    50   Input ~ 0
 SDSS
