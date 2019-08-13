@@ -2001,17 +2001,6 @@ Wire Wire Line
 	1900 1350 2500 1350
 Wire Wire Line
 	1900 1350 1900 1250
-$Comp
-L power:+12V #PWR0112
-U 1 1 5D342768
-P 1900 1250
-F 0 "#PWR0112" H 1915 1515 50  0001 C CNN
-F 1 "+12V" H 1915 1423 50  0000 C CNN
-F 2 "" H 1900 1250 50  0001 C CNN
-F 3 "" H 1900 1250 50  0001 C CNN
-	1    1900 1250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	800  3250 1250 3250
 Connection ~ 1900 2950
@@ -2041,17 +2030,6 @@ Wire Wire Line
 	1900 2950 2500 2950
 Wire Wire Line
 	1900 2950 1900 2850
-$Comp
-L power:+12V #PWR03
-U 1 1 5D55B2AC
-P 1900 2850
-F 0 "#PWR03" H 1915 3115 50  0001 C CNN
-F 1 "+12V" H 1915 3023 50  0000 C CNN
-F 2 "" H 1900 2850 50  0001 C CNN
-F 3 "" H 1900 2850 50  0001 C CNN
-	1    1900 2850
-	1    0    0    -1  
-$EndComp
 Text GLabel 950  1850 0    50   Input ~ 0
 Vref
 Wire Wire Line
@@ -2111,17 +2089,6 @@ Wire Wire Line
 	1900 4550 2500 4550
 Wire Wire Line
 	1900 4550 1900 4450
-$Comp
-L power:+12V #PWR04
-U 1 1 5D5C4003
-P 1900 4450
-F 0 "#PWR04" H 1915 4715 50  0001 C CNN
-F 1 "+12V" H 1915 4623 50  0000 C CNN
-F 2 "" H 1900 4450 50  0001 C CNN
-F 3 "" H 1900 4450 50  0001 C CNN
-	1    1900 4450
-	1    0    0    -1  
-$EndComp
 Text GLabel 1100 5050 0    50   Input ~ 0
 Vref
 $Comp
@@ -2177,17 +2144,6 @@ Wire Wire Line
 	1900 6150 2500 6150
 Wire Wire Line
 	1900 6150 1900 6050
-$Comp
-L power:+12V #PWR05
-U 1 1 5D613EBE
-P 1900 6050
-F 0 "#PWR05" H 1915 6315 50  0001 C CNN
-F 1 "+12V" H 1915 6223 50  0000 C CNN
-F 2 "" H 1900 6050 50  0001 C CNN
-F 3 "" H 1900 6050 50  0001 C CNN
-	1    1900 6050
-	1    0    0    -1  
-$EndComp
 Text GLabel 1100 6650 0    50   Input ~ 0
 Vref
 Text GLabel 800  6450 0    50   Input ~ 0
@@ -2212,17 +2168,6 @@ F 1 "GND" H 2255 6877 50  0000 C CNN
 F 2 "" H 2250 7050 50  0001 C CNN
 F 3 "" H 2250 7050 50  0001 C CNN
 	1    2250 7050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR08
-U 1 1 5D640870
-P 3950 5750
-F 0 "#PWR08" H 3965 6015 50  0001 C CNN
-F 1 "+12V" H 3965 5923 50  0000 C CNN
-F 2 "" H 3950 5750 50  0001 C CNN
-F 3 "" H 3950 5750 50  0001 C CNN
-	1    3950 5750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2460,4 +2405,31 @@ F 3 "" H 4950 5550 50  0001 C CNN
 	1    4950 5550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J21
+U 1 1 5D5586B8
+P 7550 9750
+F 0 "J21" H 7630 9792 50  0000 L CNN
+F 1 "Conn_01x03" H 7630 9701 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7550 9750 50  0001 C CNN
+F 3 "~" H 7550 9750 50  0001 C CNN
+	1    7550 9750
+	1    0    0    -1  
+$EndComp
+Text GLabel 7350 9750 0    50   Input ~ 0
+12V
+Text GLabel 7350 9850 0    50   Input ~ 0
+GND
+Text GLabel 7350 9650 0    50   Input ~ 0
+FANVoltage
+Text GLabel 1900 4450 1    50   Input ~ 0
+FANVoltage
+Text GLabel 1900 6050 1    50   Input ~ 0
+FANVoltage
+Text GLabel 1900 2850 1    50   Input ~ 0
+FANVoltage
+Text GLabel 1900 1250 1    50   Input ~ 0
+FANVoltage
+Text GLabel 3950 5750 1    50   Input ~ 0
+FANVoltage
 $EndSCHEMATC
